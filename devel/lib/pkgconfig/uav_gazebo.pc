@@ -1,0 +1,8 @@
+prefix=/home/tao/git_test/git_learn/devel
+
+Name: uav_gazebo
+Description: Description of uav_gazebo
+Version: 0.0.0
+Cflags: -I/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs mav_msgs nav_msgs roscpp sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/home/tao/git_test/git_learn/devel
+
+Name: uav_simulation
+Description: Description of uav_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/tao/git_test/git_learn/install
+
+Name: uav_gazebo
+Description: Description of uav_gazebo
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs mav_msgs nav_msgs roscpp sensor_msgs
