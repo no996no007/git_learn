@@ -36,9 +36,24 @@ add_executable (referee_system src/referee_system.cpp )
 target_link_libraries(referee_system
 ${catkin_LIBRARIES})
 
+add_executable(chao src/chao.cpp)
+target_link_libraries(chao
+  ${catkin_LIBRARIES}
+)
+
+add_executable(yao src/yao.cpp)
+target_link_libraries(yao
+  ${catkin_LIBRARIES}
+)
+
+add_executable(ma src/ma.cpp)
+target_link_libraries(ma
+  ${catkin_LIBRARIES}
+)
 
 catkin_install_python(PROGRAMS
   src/keyboard_control.py
   src/command_process.py
+  src/controller.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

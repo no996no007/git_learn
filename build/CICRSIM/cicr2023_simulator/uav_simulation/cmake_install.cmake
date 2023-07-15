@@ -60,3 +60,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/command_process.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/controller.py")
+endif()
+

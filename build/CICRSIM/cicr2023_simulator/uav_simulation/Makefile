@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -135,6 +123,18 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tao/git_test/git_learn/build/CMakeFiles /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/progress.marks
@@ -168,6 +168,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule
+.PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule
+
+# Convenience name for target.
+yao: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule
+
+.PHONY : yao
+
+# fast build rule for target.
+yao/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build
+.PHONY : yao/fast
+
+# Convenience name for target.
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/rule
+.PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/rule
+
+# Convenience name for target.
+ma: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/rule
+
+.PHONY : ma
+
+# fast build rule for target.
+ma/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build
+.PHONY : ma/fast
+
+# Convenience name for target.
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/rule
+.PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/rule
+
+# Convenience name for target.
+chao: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/rule
+
+.PHONY : chao
+
+# fast build rule for target.
+chao/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build
+.PHONY : chao/fast
+
+# Convenience name for target.
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/rule:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/rule
 .PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/rule
@@ -181,6 +226,60 @@ referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_sys
 referee_system/fast:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build
 .PHONY : referee_system/fast
+
+src/chao.o: src/chao.cpp.o
+
+.PHONY : src/chao.o
+
+# target to build an object file
+src/chao.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/src/chao.cpp.o
+.PHONY : src/chao.cpp.o
+
+src/chao.i: src/chao.cpp.i
+
+.PHONY : src/chao.i
+
+# target to preprocess a source file
+src/chao.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/src/chao.cpp.i
+.PHONY : src/chao.cpp.i
+
+src/chao.s: src/chao.cpp.s
+
+.PHONY : src/chao.s
+
+# target to generate assembly for a file
+src/chao.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/src/chao.cpp.s
+.PHONY : src/chao.cpp.s
+
+src/ma.o: src/ma.cpp.o
+
+.PHONY : src/ma.o
+
+# target to build an object file
+src/ma.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/src/ma.cpp.o
+.PHONY : src/ma.cpp.o
+
+src/ma.i: src/ma.cpp.i
+
+.PHONY : src/ma.i
+
+# target to preprocess a source file
+src/ma.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/src/ma.cpp.i
+.PHONY : src/ma.cpp.i
+
+src/ma.s: src/ma.cpp.s
+
+.PHONY : src/ma.s
+
+# target to generate assembly for a file
+src/ma.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/src/ma.cpp.s
+.PHONY : src/ma.cpp.s
 
 src/referee_system.o: src/referee_system.cpp.o
 
@@ -209,23 +308,62 @@ src/referee_system.cpp.s:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.s
 .PHONY : src/referee_system.cpp.s
 
+src/yao.o: src/yao.cpp.o
+
+.PHONY : src/yao.o
+
+# target to build an object file
+src/yao.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/src/yao.cpp.o
+.PHONY : src/yao.cpp.o
+
+src/yao.i: src/yao.cpp.i
+
+.PHONY : src/yao.i
+
+# target to preprocess a source file
+src/yao.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/src/yao.cpp.i
+.PHONY : src/yao.cpp.i
+
+src/yao.s: src/yao.cpp.s
+
+.PHONY : src/yao.s
+
+# target to generate assembly for a file
+src/yao.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/src/yao.cpp.s
+.PHONY : src/yao.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... yao"
+	@echo "... install/strip"
+	@echo "... ma"
+	@echo "... chao"
 	@echo "... referee_system"
+	@echo "... src/chao.o"
+	@echo "... src/chao.i"
+	@echo "... src/chao.s"
+	@echo "... src/ma.o"
+	@echo "... src/ma.i"
+	@echo "... src/ma.s"
 	@echo "... src/referee_system.o"
 	@echo "... src/referee_system.i"
 	@echo "... src/referee_system.s"
+	@echo "... src/yao.o"
+	@echo "... src/yao.i"
+	@echo "... src/yao.s"
 .PHONY : help
 
 

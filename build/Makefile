@@ -2521,6 +2521,45 @@ gazebo_msgs_generate_messages_eus/fast:
 .PHONY : gazebo_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named yao
+
+# Build rule for target.
+yao: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 yao
+.PHONY : yao
+
+# fast build rule for target.
+yao/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/build
+.PHONY : yao/fast
+
+#=============================================================================
+# Target rules for targets named ma
+
+# Build rule for target.
+ma: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ma
+.PHONY : ma
+
+# fast build rule for target.
+ma/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir/build
+.PHONY : ma/fast
+
+#=============================================================================
+# Target rules for targets named chao
+
+# Build rule for target.
+chao: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chao
+.PHONY : chao
+
+# fast build rule for target.
+chao/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/chao.dir/build
+.PHONY : chao/fast
+
+#=============================================================================
 # Target rules for targets named referee_system
 
 # Build rule for target.
@@ -3533,6 +3572,9 @@ help:
 	@echo "... tf_generate_messages_nodejs"
 	@echo "... gazebo_msgs_generate_messages_cpp"
 	@echo "... gazebo_msgs_generate_messages_eus"
+	@echo "... yao"
+	@echo "... ma"
+	@echo "... chao"
 	@echo "... referee_system"
 	@echo "... rotors_gazebo_lidar_plugin"
 	@echo "... rotors_gazebo_gps_plugin"
