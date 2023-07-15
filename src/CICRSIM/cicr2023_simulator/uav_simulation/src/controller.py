@@ -14,6 +14,30 @@ last_body_pose_msg = ModelState()
 drone_state = get_model_state('ardrone','world')
 odom = Odometry()
 
+current_points=0
+checkpoints=[
+    [9.8,3.6,1.95],
+    [9.3,1.0,1.95],
+    [8.8,-3.0,1.95],
+    [6.9,-3.2,1.95],
+    [6.5,-4.9,1.95],
+    [3.06,-4.22,1.95],
+    [-2.9,-4.6,1.95],
+    [-4.9,-4.6,1.95],
+    [-9.5,-3.6,1.95],
+    [-9.5,-1.6,1.95],
+    [-6.0,-1.6,1.95],
+    [-6.0,0.5,1.95],
+    [-8.5,1.6,1.95],
+    [-6.75,4.86,1.95],
+    [-2.5,5.4,1.95],
+    [1.38,5.4,1.95],
+    [3.00,5.4,1.95],
+    [6.50,3,90,1,95],
+    [6.60,1.50,1.95],
+    [8.40,1,50,1.95]
+]
+
 # 初始化全部置0
 body_pose_msg.twist.linear.x = 0
 body_pose_msg.twist.linear.y = 0
@@ -47,8 +71,11 @@ def set_body_ylinear_speed(y):
     last_body_pose_msg.twist.linear.y = body_pose_msg.twist.linear.y
 
 # 给予一个指定点，用P控制直线运动到世界坐标系的某点
-def set_world_linear_by_dst_point(xx,yy,zz):
+def set_world_linear_by_dst_point(xyz):
     global odom,drone_state,body_pose_msg,last_body_pose_msg
+    xx=xyz[0]
+    yy=xyz[1]
+    zz=xyz[2]
     drone_state = get_model_state('ardrone','world')
     x=0.1
     Kp=3/0.1 # 即在x米以内才开始减速，其他时候全速(为3)前进！
@@ -120,7 +147,10 @@ def main():
         # 这个body_pose_msg与是无人机的坐标系下的xyz轴的方向的平动速度与轴速度！！！
         # 想让它速度为多少从这下面开始写
 
-        set_world_linear_by_dst_point(0.2,0.2,2)
+        is_checked = set_world_linear_by_dst_point(checkpoints[current_points])
+        if(is_checked): # 如果到了下次就去下一个点
+            current_points+=1
+            current_points%=len(checkpoints)
 
         # body_pose_msg.twist.linear.z = 3
         # last_body_pose_msg.twist.linear.z = body_pose_msg.twist.linear.z
