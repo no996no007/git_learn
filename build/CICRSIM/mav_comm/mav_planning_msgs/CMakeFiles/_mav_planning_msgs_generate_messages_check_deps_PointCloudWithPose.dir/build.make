@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 include CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/_mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose.dir/progress.make
 
 CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/_mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mav_planning_msgs /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_planning_msgs/msg/PointCloudWithPose.msg geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Vector3:sensor_msgs/PointField:geometry_msgs/Transform:sensor_msgs/PointCloud2:geometry_msgs/TransformStamped
+	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mav_planning_msgs /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_planning_msgs/msg/PointCloudWithPose.msg std_msgs/Header:sensor_msgs/PointField:geometry_msgs/TransformStamped:geometry_msgs/Vector3:geometry_msgs/Quaternion:sensor_msgs/PointCloud2:geometry_msgs/Transform
 
 _mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose: CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/_mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose
 _mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose: CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/_mav_planning_msgs_generate_messages_check_deps_PointCloudWithPose.dir/build.make

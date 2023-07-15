@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -79,6 +67,17 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install
 install: preinstall
@@ -92,17 +91,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -113,6 +101,16 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target test
 test:
@@ -125,15 +123,17 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,109 +168,214 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_lidar_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
+rotors_gazebo_wind_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
 
-.PHONY : rotors_gazebo_lidar_plugin
+.PHONY : rotors_gazebo_wind_plugin
 
 # fast build rule for target.
-rotors_gazebo_lidar_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build
-.PHONY : rotors_gazebo_lidar_plugin/fast
+rotors_gazebo_wind_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build
+.PHONY : rotors_gazebo_wind_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_gps_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
+rotors_gazebo_ros_interface_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
 
-.PHONY : rotors_gazebo_gps_plugin
+.PHONY : rotors_gazebo_ros_interface_plugin
 
 # fast build rule for target.
-rotors_gazebo_gps_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build
-.PHONY : rotors_gazebo_gps_plugin/fast
+rotors_gazebo_ros_interface_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build
+.PHONY : rotors_gazebo_ros_interface_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
 
 # Convenience name for target.
-bond_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/rule
+rotors_gazebo_pressure_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
 
-.PHONY : bond_generate_messages_lisp
+.PHONY : rotors_gazebo_pressure_plugin
 
 # fast build rule for target.
-bond_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
+rotors_gazebo_pressure_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build
+.PHONY : rotors_gazebo_pressure_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
 
 # Convenience name for target.
-geographic_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+rotors_gazebo_odometry_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
 
-.PHONY : geographic_msgs_generate_messages_py
+.PHONY : rotors_gazebo_odometry_plugin
 
 # fast build rule for target.
-geographic_msgs_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
-.PHONY : geographic_msgs_generate_messages_py/fast
+rotors_gazebo_odometry_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build
+.PHONY : rotors_gazebo_odometry_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+rotors_gazebo_multirotor_base_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
 
-.PHONY : visualization_msgs_generate_messages_lisp
+.PHONY : rotors_gazebo_multirotor_base_plugin
 
 # fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
+rotors_gazebo_multirotor_base_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build
+.PHONY : rotors_gazebo_multirotor_base_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_imu_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
+mavros_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : rotors_gazebo_imu_plugin
+.PHONY : mavros_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-rotors_gazebo_imu_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build
-.PHONY : rotors_gazebo_imu_plugin/fast
+mavros_msgs_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
+.PHONY : mavros_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-gazebo_geotagged_images_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
+mavros_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : gazebo_geotagged_images_plugin
+.PHONY : mavros_msgs_generate_messages_cpp
 
 # fast build rule for target.
-gazebo_geotagged_images_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build
-.PHONY : gazebo_geotagged_images_plugin/fast
+mavros_msgs_generate_messages_cpp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
+.PHONY : mavros_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_py
+
+# fast build rule for target.
+uuid_msgs_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+.PHONY : uuid_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+uuid_msgs_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+.PHONY : uuid_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
+
+# Convenience name for target.
+LiftDragPlugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
+
+.PHONY : LiftDragPlugin
+
+# fast build rule for target.
+LiftDragPlugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build
+.PHONY : LiftDragPlugin/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_py
+
+# fast build rule for target.
+mavros_msgs_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
+.PHONY : mavros_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_eus
+
+# fast build rule for target.
+uuid_msgs_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+.PHONY : uuid_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_cpp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_cpp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+.PHONY : uuid_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geographic_msgs_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+.PHONY : geographic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_controller_interface.dir/rule:
@@ -286,6 +391,156 @@ rotors_gazebo_controller_interface: CICRSIM/rotors_simulator/rotors_gazebo_plugi
 rotors_gazebo_controller_interface/fast:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_controller_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_controller_interface.dir/build
 .PHONY : rotors_gazebo_controller_interface/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
+
+# Convenience name for target.
+rotors_gazebo_mavlink_interface: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
+
+.PHONY : rotors_gazebo_mavlink_interface
+
+# fast build rule for target.
+rotors_gazebo_mavlink_interface/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build
+.PHONY : rotors_gazebo_mavlink_interface/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
+
+.PHONY : topic_tools_generate_messages_nodejs
+
+# fast build rule for target.
+topic_tools_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+.PHONY : topic_tools_generate_messages_nodejs/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+mavros_msgs_generate_messages_lisp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
+.PHONY : mavros_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+
+.PHONY : topic_tools_generate_messages_eus
+
+# fast build rule for target.
+topic_tools_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+.PHONY : topic_tools_generate_messages_eus/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mav_msgs.dir/rule:
@@ -318,364 +573,19 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
 
 # Convenience name for target.
-topic_tools_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/rule
+rotors_gazebo_fw_dynamics_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
 
-.PHONY : topic_tools_generate_messages_eus
+.PHONY : rotors_gazebo_fw_dynamics_plugin
 
 # fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-mavros_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : mavros_msgs_generate_messages_lisp
-
-# fast build rule for target.
-mavros_msgs_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
-.PHONY : mavros_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/rule
-
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
-
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
-
-# Convenience name for target.
-gazebo_plugins_gencfg: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
-
-.PHONY : gazebo_plugins_gencfg
-
-# fast build rule for target.
-gazebo_plugins_gencfg/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
-.PHONY : gazebo_plugins_gencfg/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
-
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/rule
-
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
-
-# Convenience name for target.
-rotors_gazebo_mavlink_interface: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/rule
-
-.PHONY : rotors_gazebo_mavlink_interface
-
-# fast build rule for target.
-rotors_gazebo_mavlink_interface/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build
-.PHONY : rotors_gazebo_mavlink_interface/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
-
-.PHONY : nodelet_generate_messages_nodejs
-
-# fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/rule
-
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/rule
-
-.PHONY : nodelet_generate_messages_eus
-
-# fast build rule for target.
-nodelet_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/build
-.PHONY : nodelet_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
-
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/rule
-
-.PHONY : bond_generate_messages_eus
-
-# fast build rule for target.
-bond_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/build
-.PHONY : bond_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-mavros_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : mavros_msgs_generate_messages_cpp
-
-# fast build rule for target.
-mavros_msgs_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
-.PHONY : mavros_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nodelet_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/rule
-
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
-
-# Convenience name for target.
-rotors_gazebo_pressure_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/rule
-
-.PHONY : rotors_gazebo_pressure_plugin
-
-# fast build rule for target.
-rotors_gazebo_pressure_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build
-.PHONY : rotors_gazebo_pressure_plugin/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
-
-# Convenience name for target.
-rotors_gazebo_noisydepth_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
-
-.PHONY : rotors_gazebo_noisydepth_plugin
-
-# fast build rule for target.
-rotors_gazebo_noisydepth_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build
-.PHONY : rotors_gazebo_noisydepth_plugin/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_eus
-
-# fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
-
-# Convenience name for target.
-rotors_gazebo_magnetometer_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
-
-.PHONY : rotors_gazebo_magnetometer_plugin
-
-# fast build rule for target.
-rotors_gazebo_magnetometer_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build
-.PHONY : rotors_gazebo_magnetometer_plugin/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
-
-# Convenience name for target.
-mavros_dummy_target: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
-
-.PHONY : mavros_dummy_target
-
-# fast build rule for target.
-mavros_dummy_target/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build
-.PHONY : mavros_dummy_target/fast
+rotors_gazebo_fw_dynamics_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build
+.PHONY : rotors_gazebo_fw_dynamics_plugin/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
@@ -693,64 +603,34 @@ diagnostic_msgs_generate_messages_cpp/fast:
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_fw_dynamics_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/rule
+gazebo_plugins_gencfg: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/rule
 
-.PHONY : rotors_gazebo_fw_dynamics_plugin
+.PHONY : gazebo_plugins_gencfg
 
 # fast build rule for target.
-rotors_gazebo_fw_dynamics_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build
-.PHONY : rotors_gazebo_fw_dynamics_plugin/fast
+gazebo_plugins_gencfg/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
+.PHONY : gazebo_plugins_gencfg/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+gazebo_geotagged_images_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/rule
 
-.PHONY : diagnostic_msgs_generate_messages_eus
+.PHONY : gazebo_geotagged_images_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
-.PHONY : diagnostic_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
-
-# Convenience name for target.
-rotors_gazebo_wind_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/rule
-
-.PHONY : rotors_gazebo_wind_plugin
-
-# fast build rule for target.
-rotors_gazebo_wind_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build
-.PHONY : rotors_gazebo_wind_plugin/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+gazebo_geotagged_images_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build
+.PHONY : gazebo_geotagged_images_plugin/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule:
@@ -768,94 +648,79 @@ uuid_msgs_generate_messages_lisp/fast:
 .PHONY : uuid_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+rotors_gazebo_magnetometer_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/rule
 
-.PHONY : diagnostic_msgs_generate_messages_nodejs
+.PHONY : rotors_gazebo_magnetometer_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
-.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+rotors_gazebo_magnetometer_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build
+.PHONY : rotors_gazebo_magnetometer_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-mavros_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+visualization_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : mavros_msgs_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_lisp
 
 # fast build rule for target.
-mavros_msgs_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
-.PHONY : mavros_msgs_generate_messages_eus/fast
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
 
 # Convenience name for target.
-diagnostic_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+rotors_gazebo_imu_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/rule
 
-.PHONY : diagnostic_msgs_generate_messages_py
+.PHONY : rotors_gazebo_imu_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
+rotors_gazebo_imu_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build
+.PHONY : rotors_gazebo_imu_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_odometry_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/rule
+rotors_gazebo_noisydepth_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/rule
 
-.PHONY : rotors_gazebo_odometry_plugin
+.PHONY : rotors_gazebo_noisydepth_plugin
 
 # fast build rule for target.
-rotors_gazebo_odometry_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build
-.PHONY : rotors_gazebo_odometry_plugin/fast
+rotors_gazebo_noisydepth_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build
+.PHONY : rotors_gazebo_noisydepth_plugin/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
 
 # Convenience name for target.
-geographic_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+mavros_dummy_target: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/rule
 
-.PHONY : geographic_msgs_generate_messages_cpp
+.PHONY : mavros_dummy_target
 
 # fast build rule for target.
-geographic_msgs_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
-.PHONY : geographic_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geographic_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geographic_msgs_generate_messages_eus
-
-# fast build rule for target.
-geographic_msgs_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
-.PHONY : geographic_msgs_generate_messages_eus/fast
+mavros_dummy_target/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build
+.PHONY : mavros_dummy_target/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_motor_model.dir/rule:
@@ -873,139 +738,19 @@ rotors_gazebo_motor_model/fast:
 .PHONY : rotors_gazebo_motor_model/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geographic_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+geographic_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
 
-.PHONY : geographic_msgs_generate_messages_nodejs
+.PHONY : geographic_msgs_generate_messages_eus
 
 # fast build rule for target.
-geographic_msgs_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
-.PHONY : geographic_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-uuid_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : uuid_msgs_generate_messages_cpp
-
-# fast build rule for target.
-uuid_msgs_generate_messages_cpp/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
-.PHONY : uuid_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-uuid_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
-
-.PHONY : uuid_msgs_generate_messages_eus
-
-# fast build rule for target.
-uuid_msgs_generate_messages_eus/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
-.PHONY : uuid_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-mavros_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
-
-.PHONY : mavros_msgs_generate_messages_py
-
-# fast build rule for target.
-mavros_msgs_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
-.PHONY : mavros_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
-
-# Convenience name for target.
-LiftDragPlugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/rule
-
-.PHONY : LiftDragPlugin
-
-# fast build rule for target.
-LiftDragPlugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build
-.PHONY : LiftDragPlugin/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-uuid_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : uuid_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-uuid_msgs_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
-.PHONY : uuid_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/rule
-
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-uuid_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
-
-.PHONY : uuid_msgs_generate_messages_py
-
-# fast build rule for target.
-uuid_msgs_generate_messages_py/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
-.PHONY : uuid_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-mavros_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : mavros_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-mavros_msgs_generate_messages_nodejs/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
-.PHONY : mavros_msgs_generate_messages_nodejs/fast
+geographic_msgs_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+.PHONY : geographic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule:
@@ -1023,34 +768,139 @@ geographic_msgs_generate_messages_lisp/fast:
 .PHONY : geographic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_multirotor_base_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/rule
+geographic_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
 
-.PHONY : rotors_gazebo_multirotor_base_plugin
+.PHONY : geographic_msgs_generate_messages_py
 
 # fast build rule for target.
-rotors_gazebo_multirotor_base_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build
-.PHONY : rotors_gazebo_multirotor_base_plugin/fast
+geographic_msgs_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+.PHONY : geographic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
-.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
 
 # Convenience name for target.
-rotors_gazebo_ros_interface_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/rule
+rotors_gazebo_gps_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/rule
 
-.PHONY : rotors_gazebo_ros_interface_plugin
+.PHONY : rotors_gazebo_gps_plugin
 
 # fast build rule for target.
-rotors_gazebo_ros_interface_plugin/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build
-.PHONY : rotors_gazebo_ros_interface_plugin/fast
+rotors_gazebo_gps_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build
+.PHONY : rotors_gazebo_gps_plugin/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
+
+# Convenience name for target.
+rotors_gazebo_lidar_plugin: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/rule
+
+.PHONY : rotors_gazebo_lidar_plugin
+
+# fast build rule for target.
+rotors_gazebo_lidar_plugin/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build
+.PHONY : rotors_gazebo_lidar_plugin/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_eus
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+.PHONY : diagnostic_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_lisp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_py: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_py
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_eus: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_eus
+
+# fast build rule for target.
+mavros_msgs_generate_messages_eus/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
+.PHONY : mavros_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_nodejs: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_nodejs/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+.PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_cpp: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_cpp/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+.PHONY : geographic_msgs_generate_messages_cpp/fast
 
 Actuators.pb.o: Actuators.pb.cc.o
 
@@ -2354,72 +2204,62 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... rotors_gazebo_lidar_plugin"
-	@echo "... rotors_gazebo_gps_plugin"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... geographic_msgs_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... rotors_gazebo_imu_plugin"
-	@echo "... gazebo_geotagged_images_plugin"
+	@echo "... rotors_gazebo_wind_plugin"
+	@echo "... rotors_gazebo_ros_interface_plugin"
+	@echo "... rotors_gazebo_pressure_plugin"
+	@echo "... rotors_gazebo_odometry_plugin"
+	@echo "... rotors_gazebo_multirotor_base_plugin"
+	@echo "... mavros_msgs_generate_messages_nodejs"
+	@echo "... mavros_msgs_generate_messages_cpp"
+	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_nodejs"
+	@echo "... LiftDragPlugin"
+	@echo "... mavros_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_eus"
+	@echo "... uuid_msgs_generate_messages_cpp"
+	@echo "... geographic_msgs_generate_messages_nodejs"
 	@echo "... rotors_gazebo_controller_interface"
+	@echo "... rotors_gazebo_mavlink_interface"
+	@echo "... topic_tools_generate_messages_py"
+	@echo "... rebuild_cache"
+	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... install"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... edit_cache"
+	@echo "... mavros_msgs_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... list_install_components"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... mav_msgs"
 	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... gazebo_plugins_gencfg"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... rotors_gazebo_mavlink_interface"
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... bond_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_eus"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... bond_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_cpp"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... rotors_gazebo_pressure_plugin"
-	@echo "... rotors_gazebo_noisydepth_plugin"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... rotors_gazebo_magnetometer_plugin"
-	@echo "... mavros_dummy_target"
-	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... rotors_gazebo_fw_dynamics_plugin"
-	@echo "... diagnostic_msgs_generate_messages_eus"
-	@echo "... rotors_gazebo_wind_plugin"
-	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... gazebo_plugins_gencfg"
+	@echo "... gazebo_geotagged_images_plugin"
+	@echo "... test"
 	@echo "... uuid_msgs_generate_messages_lisp"
-	@echo "... diagnostic_msgs_generate_messages_nodejs"
-	@echo "... mavros_msgs_generate_messages_eus"
-	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... rotors_gazebo_odometry_plugin"
-	@echo "... geographic_msgs_generate_messages_cpp"
-	@echo "... geographic_msgs_generate_messages_eus"
+	@echo "... rotors_gazebo_magnetometer_plugin"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... rotors_gazebo_imu_plugin"
+	@echo "... rotors_gazebo_noisydepth_plugin"
+	@echo "... mavros_dummy_target"
 	@echo "... rotors_gazebo_motor_model"
-	@echo "... geographic_msgs_generate_messages_nodejs"
-	@echo "... uuid_msgs_generate_messages_cpp"
-	@echo "... uuid_msgs_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_py"
-	@echo "... LiftDragPlugin"
-	@echo "... uuid_msgs_generate_messages_nodejs"
-	@echo "... bond_generate_messages_py"
-	@echo "... uuid_msgs_generate_messages_py"
-	@echo "... mavros_msgs_generate_messages_nodejs"
+	@echo "... geographic_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_lisp"
-	@echo "... rotors_gazebo_multirotor_base_plugin"
-	@echo "... rotors_gazebo_ros_interface_plugin"
+	@echo "... geographic_msgs_generate_messages_py"
+	@echo "... rotors_gazebo_gps_plugin"
+	@echo "... rotors_gazebo_lidar_plugin"
+	@echo "... diagnostic_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... diagnostic_msgs_generate_messages_py"
+	@echo "... mavros_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... install/strip"
+	@echo "... geographic_msgs_generate_messages_cpp"
 	@echo "... Actuators.pb.o"
 	@echo "... Actuators.pb.i"
 	@echo "... Actuators.pb.s"

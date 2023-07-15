@@ -2092,43 +2092,238 @@ mav_planning_msgs_genpy/fast:
 .PHONY : mav_planning_msgs_genpy/fast
 
 #=============================================================================
-# Target rules for targets named realsense_gazebo_plugin
+# Target rules for targets named apriltag_ros_single_image_client_node
 
 # Build rule for target.
-realsense_gazebo_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 realsense_gazebo_plugin
-.PHONY : realsense_gazebo_plugin
+apriltag_ros_single_image_client_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_single_image_client_node
+.PHONY : apriltag_ros_single_image_client_node
 
 # fast build rule for target.
-realsense_gazebo_plugin/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/build
-.PHONY : realsense_gazebo_plugin/fast
+apriltag_ros_single_image_client_node/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/build
+.PHONY : apriltag_ros_single_image_client_node/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_lisp
+# Target rules for targets named apriltag_ros_single_image_server_node
 
 # Build rule for target.
-gazebo_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_lisp
-.PHONY : gazebo_msgs_generate_messages_lisp
+apriltag_ros_single_image_server_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_single_image_server_node
+.PHONY : apriltag_ros_single_image_server_node
 
 # fast build rule for target.
-gazebo_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
-.PHONY : gazebo_msgs_generate_messages_lisp/fast
+apriltag_ros_single_image_server_node/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir/build
+.PHONY : apriltag_ros_single_image_server_node/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_generate_messages_eus
+# Target rules for targets named apriltag_ros_continuous_node
 
 # Build rule for target.
-actionlib_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
-.PHONY : actionlib_generate_messages_eus
+apriltag_ros_continuous_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_continuous_node
+.PHONY : apriltag_ros_continuous_node
 
 # fast build rule for target.
-actionlib_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_eus.dir/build
-.PHONY : actionlib_generate_messages_eus/fast
+apriltag_ros_continuous_node/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_node.dir/build
+.PHONY : apriltag_ros_continuous_node/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_common
+
+# Build rule for target.
+apriltag_ros_common: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_common
+.PHONY : apriltag_ros_common
+
+# fast build rule for target.
+apriltag_ros_common/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_common.dir/build
+.PHONY : apriltag_ros_common/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_genpy
+
+# Build rule for target.
+apriltag_ros_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_genpy
+.PHONY : apriltag_ros_genpy
+
+# fast build rule for target.
+apriltag_ros_genpy/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genpy.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genpy.dir/build
+.PHONY : apriltag_ros_genpy/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages_py
+
+# Build rule for target.
+apriltag_ros_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages_py
+.PHONY : apriltag_ros_generate_messages_py
+
+# fast build rule for target.
+apriltag_ros_generate_messages_py/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_py.dir/build
+.PHONY : apriltag_ros_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_gennodejs
+
+# Build rule for target.
+apriltag_ros_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_gennodejs
+.PHONY : apriltag_ros_gennodejs
+
+# fast build rule for target.
+apriltag_ros_gennodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gennodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gennodejs.dir/build
+.PHONY : apriltag_ros_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages_nodejs
+
+# Build rule for target.
+apriltag_ros_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages_nodejs
+.PHONY : apriltag_ros_generate_messages_nodejs
+
+# fast build rule for target.
+apriltag_ros_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_nodejs.dir/build
+.PHONY : apriltag_ros_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages_lisp
+
+# Build rule for target.
+apriltag_ros_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages_lisp
+.PHONY : apriltag_ros_generate_messages_lisp
+
+# fast build rule for target.
+apriltag_ros_generate_messages_lisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_lisp.dir/build
+.PHONY : apriltag_ros_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_lisp
+
+# Build rule for target.
+bond_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_lisp
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named nodelet_generate_messages_py
+
+# Build rule for target.
+nodelet_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_py
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_geneus
+
+# Build rule for target.
+apriltag_ros_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_geneus
+.PHONY : apriltag_ros_geneus
+
+# fast build rule for target.
+apriltag_ros_geneus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_geneus.dir/build
+.PHONY : apriltag_ros_geneus/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_nodejs
+
+# Build rule for target.
+tf_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_cpp
+
+# Build rule for target.
+bond_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_cpp
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_eus
+
+# Build rule for target.
+bond_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_eus
+.PHONY : bond_generate_messages_eus
+
+# fast build rule for target.
+bond_generate_messages_eus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_eus.dir/build
+.PHONY : bond_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages
+
+# Build rule for target.
+apriltag_ros_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages
+.PHONY : apriltag_ros_generate_messages
+
+# fast build rule for target.
+apriltag_ros_generate_messages/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages.dir/build
+.PHONY : apriltag_ros_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named nodelet_generate_messages_lisp
+
+# Build rule for target.
+nodelet_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_lisp
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named tf_generate_messages_py
@@ -2140,7 +2335,7 @@ tf_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 tf_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_py.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_py.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
 #=============================================================================
@@ -2153,47 +2348,8 @@ actionlib_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_py.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_py.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
-
-# Build rule for target.
-dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named tf_generate_messages_cpp
@@ -2205,60 +2361,99 @@ tf_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 tf_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_cpp.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_cpp.dir/build
 .PHONY : tf_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
+# Target rules for targets named bond_generate_messages_nodejs
 
 # Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
+bond_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_nodejs
+.PHONY : bond_generate_messages_nodejs
 
 # fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
+bond_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_nodejs.dir/build
+.PHONY : bond_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
+# Target rules for targets named nodelet_generate_messages_nodejs
 
 # Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
+nodelet_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_nodejs
+.PHONY : nodelet_generate_messages_nodejs
 
 # fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
+nodelet_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
+.PHONY : nodelet_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
+# Target rules for targets named _apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage
 
 # Build rule for target.
-dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
+_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage
+.PHONY : _apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage.dir/build
+.PHONY : _apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
+# Target rules for targets named nodelet_generate_messages_cpp
 
 # Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
+nodelet_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_cpp
+.PHONY : nodelet_generate_messages_cpp
 
 # fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
+nodelet_generate_messages_cpp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages_eus
+
+# Build rule for target.
+apriltag_ros_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages_eus
+.PHONY : apriltag_ros_generate_messages_eus
+
+# fast build rule for target.
+apriltag_ros_generate_messages_eus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_eus.dir/build
+.PHONY : apriltag_ros_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named nodelet_generate_messages_eus
+
+# Build rule for target.
+nodelet_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_eus
+.PHONY : nodelet_generate_messages_eus
+
+# fast build rule for target.
+nodelet_generate_messages_eus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/nodelet_generate_messages_eus.dir/build
+.PHONY : nodelet_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_nodejs
+
+# Build rule for target.
+actionlib_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_cpp
@@ -2270,7 +2465,7 @@ actionlib_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
@@ -2283,21 +2478,34 @@ tf2_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_ros_gencfg
+# Target rules for targets named actionlib_generate_messages_eus
 
 # Build rule for target.
-gazebo_ros_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
-.PHONY : gazebo_ros_gencfg
+actionlib_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_eus
+.PHONY : actionlib_generate_messages_eus
 
 # fast build rule for target.
-gazebo_ros_gencfg/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_ros_gencfg.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
+actionlib_generate_messages_eus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_single_image_detector
+
+# Build rule for target.
+apriltag_ros_single_image_detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_single_image_detector
+.PHONY : apriltag_ros_single_image_detector
+
+# fast build rule for target.
+apriltag_ros_single_image_detector/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/build
+.PHONY : apriltag_ros_single_image_detector/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_lisp
@@ -2309,34 +2517,177 @@ actionlib_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_nodejs
+# Target rules for targets named tf_generate_messages_lisp
 
 # Build rule for target.
-gazebo_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_nodejs
-.PHONY : gazebo_msgs_generate_messages_nodejs
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
 
 # fast build rule for target.
-gazebo_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
-.PHONY : gazebo_msgs_generate_messages_nodejs/fast
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_lisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named actionlib_generate_messages_nodejs
+# Target rules for targets named _apriltag_ros_generate_messages_check_deps_AprilTagDetection
 
 # Build rule for target.
-actionlib_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_nodejs
-.PHONY : actionlib_generate_messages_nodejs
+_apriltag_ros_generate_messages_check_deps_AprilTagDetection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _apriltag_ros_generate_messages_check_deps_AprilTagDetection
+.PHONY : _apriltag_ros_generate_messages_check_deps_AprilTagDetection
 
 # fast build rule for target.
-actionlib_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
-.PHONY : actionlib_generate_messages_nodejs/fast
+_apriltag_ros_generate_messages_check_deps_AprilTagDetection/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AprilTagDetection.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AprilTagDetection.dir/build
+.PHONY : _apriltag_ros_generate_messages_check_deps_AprilTagDetection/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_gencpp
+
+# Build rule for target.
+apriltag_ros_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_gencpp
+.PHONY : apriltag_ros_gencpp
+
+# fast build rule for target.
+apriltag_ros_gencpp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/build
+.PHONY : apriltag_ros_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_eus
+
+# Build rule for target.
+tf_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
+.PHONY : tf_generate_messages_eus
+
+# fast build rule for target.
+tf_generate_messages_eus/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_eus.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_continuous_detector
+
+# Build rule for target.
+apriltag_ros_continuous_detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_continuous_detector
+.PHONY : apriltag_ros_continuous_detector
+
+# fast build rule for target.
+apriltag_ros_continuous_detector/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/build
+.PHONY : apriltag_ros_continuous_detector/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_genlisp
+
+# Build rule for target.
+apriltag_ros_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_genlisp
+.PHONY : apriltag_ros_genlisp
+
+# fast build rule for target.
+apriltag_ros_genlisp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_genlisp.dir/build
+.PHONY : apriltag_ros_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named apriltag_ros_generate_messages_cpp
+
+# Build rule for target.
+apriltag_ros_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apriltag_ros_generate_messages_cpp
+.PHONY : apriltag_ros_generate_messages_cpp
+
+# fast build rule for target.
+apriltag_ros_generate_messages_cpp/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_generate_messages_cpp.dir/build
+.PHONY : apriltag_ros_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_py
+
+# Build rule for target.
+bond_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_py
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_nodejs
+
+# Build rule for target.
+tf2_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named _apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray
+
+# Build rule for target.
+_apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray
+.PHONY : _apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray
+
+# fast build rule for target.
+_apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/_apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray.dir/build
+.PHONY : _apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray/fast
+
+#=============================================================================
+# Target rules for targets named realsense_gazebo_plugin
+
+# Build rule for target.
+realsense_gazebo_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 realsense_gazebo_plugin
+.PHONY : realsense_gazebo_plugin
+
+# fast build rule for target.
+realsense_gazebo_plugin/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/realsense_gazebo_plugin.dir/build
+.PHONY : realsense_gazebo_plugin/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_msgs_generate_messages_py
@@ -2352,17 +2703,95 @@ gazebo_msgs_generate_messages_py/fast:
 .PHONY : gazebo_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named tf_generate_messages_eus
+# Target rules for targets named gazebo_msgs_generate_messages_lisp
 
 # Build rule for target.
-tf_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_eus
-.PHONY : tf_generate_messages_eus
+gazebo_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_lisp
+.PHONY : gazebo_msgs_generate_messages_lisp
 
 # fast build rule for target.
-tf_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
+gazebo_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+.PHONY : gazebo_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_msgs_generate_messages_nodejs
+
+# Build rule for target.
+gazebo_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_nodejs
+.PHONY : gazebo_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+.PHONY : gazebo_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_msgs_generate_messages_eus
+
+# Build rule for target.
+gazebo_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_eus
+.PHONY : gazebo_msgs_generate_messages_eus
+
+# fast build rule for target.
+gazebo_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+.PHONY : gazebo_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_cpp
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_cpp
+.PHONY : dynamic_reconfigure_generate_messages_cpp
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_cpp/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named gazebo_ros_gencfg
+
+# Build rule for target.
+gazebo_ros_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_ros_gencfg
+.PHONY : gazebo_ros_gencfg
+
+# fast build rule for target.
+gazebo_ros_gencfg/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_ros_gencfg.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_ros_gencfg.dir/build
+.PHONY : gazebo_ros_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named std_srvs_generate_messages_cpp
@@ -2378,19 +2807,6 @@ std_srvs_generate_messages_cpp/fast:
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_cpp
-
-# Build rule for target.
-tf2_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_eus
 
 # Build rule for target.
@@ -2402,45 +2818,6 @@ dynamic_reconfigure_generate_messages_eus: cmake_check_build_system
 dynamic_reconfigure_generate_messages_eus/fast:
 	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named dynamic_reconfigure_gencfg
-
-# Build rule for target.
-dynamic_reconfigure_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_nodejs
-
-# Build rule for target.
-tf2_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_nodejs
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_py
-
-# Build rule for target.
-tf2_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_py
@@ -2456,17 +2833,17 @@ dynamic_reconfigure_generate_messages_py/fast:
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
+# Target rules for targets named std_srvs_generate_messages_py
 
 # Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
 
 # fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_lisp
@@ -2482,17 +2859,43 @@ dynamic_reconfigure_generate_messages_lisp/fast:
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named tf_generate_messages_nodejs
+# Target rules for targets named dynamic_reconfigure_gencfg
 
 # Build rule for target.
-tf_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_nodejs
-.PHONY : tf_generate_messages_nodejs
+dynamic_reconfigure_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_gencfg
+.PHONY : dynamic_reconfigure_gencfg
 
 # fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
+dynamic_reconfigure_gencfg/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+.PHONY : dynamic_reconfigure_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_reconfigure_generate_messages_nodejs
+
+# Build rule for target.
+dynamic_reconfigure_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_reconfigure_generate_messages_nodejs
+.PHONY : dynamic_reconfigure_generate_messages_nodejs
+
+# fast build rule for target.
+dynamic_reconfigure_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_msgs_generate_messages_cpp
@@ -2508,17 +2911,17 @@ gazebo_msgs_generate_messages_cpp/fast:
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_msgs_generate_messages_eus
+# Target rules for targets named start_trigger
 
 # Build rule for target.
-gazebo_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_msgs_generate_messages_eus
-.PHONY : gazebo_msgs_generate_messages_eus
+start_trigger: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 start_trigger
+.PHONY : start_trigger
 
 # fast build rule for target.
-gazebo_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
-.PHONY : gazebo_msgs_generate_messages_eus/fast
+start_trigger/fast:
+	$(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build
+.PHONY : start_trigger/fast
 
 #=============================================================================
 # Target rules for targets named yao
@@ -2573,95 +2976,186 @@ referee_system/fast:
 .PHONY : referee_system/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_lidar_plugin
+# Target rules for targets named rotors_gazebo_wind_plugin
 
 # Build rule for target.
-rotors_gazebo_lidar_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_lidar_plugin
-.PHONY : rotors_gazebo_lidar_plugin
+rotors_gazebo_wind_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_wind_plugin
+.PHONY : rotors_gazebo_wind_plugin
 
 # fast build rule for target.
-rotors_gazebo_lidar_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build
-.PHONY : rotors_gazebo_lidar_plugin/fast
+rotors_gazebo_wind_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build
+.PHONY : rotors_gazebo_wind_plugin/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_gps_plugin
+# Target rules for targets named rotors_gazebo_ros_interface_plugin
 
 # Build rule for target.
-rotors_gazebo_gps_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_gps_plugin
-.PHONY : rotors_gazebo_gps_plugin
+rotors_gazebo_ros_interface_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_ros_interface_plugin
+.PHONY : rotors_gazebo_ros_interface_plugin
 
 # fast build rule for target.
-rotors_gazebo_gps_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build
-.PHONY : rotors_gazebo_gps_plugin/fast
+rotors_gazebo_ros_interface_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build
+.PHONY : rotors_gazebo_ros_interface_plugin/fast
 
 #=============================================================================
-# Target rules for targets named bond_generate_messages_lisp
+# Target rules for targets named rotors_gazebo_pressure_plugin
 
 # Build rule for target.
-bond_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_lisp
-.PHONY : bond_generate_messages_lisp
+rotors_gazebo_pressure_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_pressure_plugin
+.PHONY : rotors_gazebo_pressure_plugin
 
 # fast build rule for target.
-bond_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
+rotors_gazebo_pressure_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build
+.PHONY : rotors_gazebo_pressure_plugin/fast
 
 #=============================================================================
-# Target rules for targets named geographic_msgs_generate_messages_py
+# Target rules for targets named rotors_gazebo_odometry_plugin
 
 # Build rule for target.
-geographic_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_py
-.PHONY : geographic_msgs_generate_messages_py
+rotors_gazebo_odometry_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_odometry_plugin
+.PHONY : rotors_gazebo_odometry_plugin
 
 # fast build rule for target.
-geographic_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
-.PHONY : geographic_msgs_generate_messages_py/fast
+rotors_gazebo_odometry_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build
+.PHONY : rotors_gazebo_odometry_plugin/fast
 
 #=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_lisp
+# Target rules for targets named rotors_gazebo_multirotor_base_plugin
 
 # Build rule for target.
-visualization_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
-.PHONY : visualization_msgs_generate_messages_lisp
+rotors_gazebo_multirotor_base_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_multirotor_base_plugin
+.PHONY : rotors_gazebo_multirotor_base_plugin
 
 # fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
+rotors_gazebo_multirotor_base_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build
+.PHONY : rotors_gazebo_multirotor_base_plugin/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_imu_plugin
+# Target rules for targets named mavros_msgs_generate_messages_nodejs
 
 # Build rule for target.
-rotors_gazebo_imu_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_imu_plugin
-.PHONY : rotors_gazebo_imu_plugin
+mavros_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_nodejs
+.PHONY : mavros_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-rotors_gazebo_imu_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build
-.PHONY : rotors_gazebo_imu_plugin/fast
+mavros_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
+.PHONY : mavros_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
-# Target rules for targets named gazebo_geotagged_images_plugin
+# Target rules for targets named mavros_msgs_generate_messages_cpp
 
 # Build rule for target.
-gazebo_geotagged_images_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_geotagged_images_plugin
-.PHONY : gazebo_geotagged_images_plugin
+mavros_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_cpp
+.PHONY : mavros_msgs_generate_messages_cpp
 
 # fast build rule for target.
-gazebo_geotagged_images_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build
-.PHONY : gazebo_geotagged_images_plugin/fast
+mavros_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
+.PHONY : mavros_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named uuid_msgs_generate_messages_py
+
+# Build rule for target.
+uuid_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_py
+.PHONY : uuid_msgs_generate_messages_py
+
+# fast build rule for target.
+uuid_msgs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+.PHONY : uuid_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named uuid_msgs_generate_messages_nodejs
+
+# Build rule for target.
+uuid_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_nodejs
+.PHONY : uuid_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+uuid_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+.PHONY : uuid_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named LiftDragPlugin
+
+# Build rule for target.
+LiftDragPlugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LiftDragPlugin
+.PHONY : LiftDragPlugin
+
+# fast build rule for target.
+LiftDragPlugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build
+.PHONY : LiftDragPlugin/fast
+
+#=============================================================================
+# Target rules for targets named mavros_msgs_generate_messages_py
+
+# Build rule for target.
+mavros_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_py
+.PHONY : mavros_msgs_generate_messages_py
+
+# fast build rule for target.
+mavros_msgs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
+.PHONY : mavros_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named uuid_msgs_generate_messages_eus
+
+# Build rule for target.
+uuid_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_eus
+.PHONY : uuid_msgs_generate_messages_eus
+
+# fast build rule for target.
+uuid_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+.PHONY : uuid_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named uuid_msgs_generate_messages_cpp
+
+# Build rule for target.
+uuid_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_cpp
+.PHONY : uuid_msgs_generate_messages_cpp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+.PHONY : uuid_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geographic_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geographic_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_nodejs
+.PHONY : geographic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geographic_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+.PHONY : geographic_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named rotors_gazebo_controller_interface
@@ -2675,6 +3169,136 @@ rotors_gazebo_controller_interface: cmake_check_build_system
 rotors_gazebo_controller_interface/fast:
 	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_controller_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_controller_interface.dir/build
 .PHONY : rotors_gazebo_controller_interface/fast
+
+#=============================================================================
+# Target rules for targets named rotors_gazebo_mavlink_interface
+
+# Build rule for target.
+rotors_gazebo_mavlink_interface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_mavlink_interface
+.PHONY : rotors_gazebo_mavlink_interface
+
+# fast build rule for target.
+rotors_gazebo_mavlink_interface/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build
+.PHONY : rotors_gazebo_mavlink_interface/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_py
+
+# Build rule for target.
+topic_tools_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_nodejs
+
+# Build rule for target.
+topic_tools_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_nodejs
+.PHONY : topic_tools_generate_messages_nodejs
+
+# fast build rule for target.
+topic_tools_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
+.PHONY : topic_tools_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_py
+
+# Build rule for target.
+visualization_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named mavros_msgs_generate_messages_lisp
+
+# Build rule for target.
+mavros_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_lisp
+.PHONY : mavros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+mavros_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
+.PHONY : mavros_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_eus
+
+# Build rule for target.
+topic_tools_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_eus
+.PHONY : topic_tools_generate_messages_eus
+
+# fast build rule for target.
+topic_tools_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build
+.PHONY : topic_tools_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_cpp
+
+# Build rule for target.
+topic_tools_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_nodejs
+
+# Build rule for target.
+visualization_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
+.PHONY : visualization_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+visualization_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+.PHONY : visualization_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named visualization_msgs_generate_messages_eus
+
+# Build rule for target.
+visualization_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
+.PHONY : visualization_msgs_generate_messages_eus
+
+# fast build rule for target.
+visualization_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+.PHONY : visualization_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_lisp
+
+# Build rule for target.
+topic_tools_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named mav_msgs
@@ -2703,316 +3327,17 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named topic_tools_generate_messages_eus
+# Target rules for targets named rotors_gazebo_fw_dynamics_plugin
 
 # Build rule for target.
-topic_tools_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_eus
-.PHONY : topic_tools_generate_messages_eus
+rotors_gazebo_fw_dynamics_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_fw_dynamics_plugin
+.PHONY : rotors_gazebo_fw_dynamics_plugin
 
 # fast build rule for target.
-topic_tools_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_eus.dir/build
-.PHONY : topic_tools_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named mavros_msgs_generate_messages_lisp
-
-# Build rule for target.
-mavros_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_lisp
-.PHONY : mavros_msgs_generate_messages_lisp
-
-# fast build rule for target.
-mavros_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
-.PHONY : mavros_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_nodejs
-
-# Build rule for target.
-topic_tools_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_nodejs
-.PHONY : topic_tools_generate_messages_nodejs
-
-# fast build rule for target.
-topic_tools_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
-.PHONY : topic_tools_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_nodejs
-
-# Build rule for target.
-visualization_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_nodejs
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_lisp
-
-# Build rule for target.
-nodelet_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_lisp
-.PHONY : nodelet_generate_messages_lisp
-
-# fast build rule for target.
-nodelet_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_lisp.dir/build
-.PHONY : nodelet_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named gazebo_plugins_gencfg
-
-# Build rule for target.
-gazebo_plugins_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gazebo_plugins_gencfg
-.PHONY : gazebo_plugins_gencfg
-
-# fast build rule for target.
-gazebo_plugins_gencfg/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
-.PHONY : gazebo_plugins_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_cpp
-
-# Build rule for target.
-nodelet_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_cpp
-.PHONY : nodelet_generate_messages_cpp
-
-# fast build rule for target.
-nodelet_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_cpp.dir/build
-.PHONY : nodelet_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_py
-
-# Build rule for target.
-topic_tools_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
-.PHONY : topic_tools_generate_messages_py
-
-# fast build rule for target.
-topic_tools_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_py.dir/build
-.PHONY : topic_tools_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named rotors_gazebo_mavlink_interface
-
-# Build rule for target.
-rotors_gazebo_mavlink_interface: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_mavlink_interface
-.PHONY : rotors_gazebo_mavlink_interface
-
-# fast build rule for target.
-rotors_gazebo_mavlink_interface/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_mavlink_interface.dir/build
-.PHONY : rotors_gazebo_mavlink_interface/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_nodejs
-
-# Build rule for target.
-nodelet_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_nodejs
-.PHONY : nodelet_generate_messages_nodejs
-
-# fast build rule for target.
-nodelet_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/build
-.PHONY : nodelet_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_nodejs
-
-# Build rule for target.
-bond_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_nodejs
-.PHONY : bond_generate_messages_nodejs
-
-# fast build rule for target.
-bond_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_nodejs.dir/build
-.PHONY : bond_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_py
-
-# Build rule for target.
-visualization_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_py
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_cpp
-
-# Build rule for target.
-topic_tools_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_eus
-
-# Build rule for target.
-nodelet_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_eus
-.PHONY : nodelet_generate_messages_eus
-
-# fast build rule for target.
-nodelet_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_eus.dir/build
-.PHONY : nodelet_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named topic_tools_generate_messages_lisp
-
-# Build rule for target.
-topic_tools_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
-.PHONY : topic_tools_generate_messages_lisp
-
-# fast build rule for target.
-topic_tools_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
-.PHONY : topic_tools_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_eus
-
-# Build rule for target.
-bond_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_eus
-.PHONY : bond_generate_messages_eus
-
-# fast build rule for target.
-bond_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_eus.dir/build
-.PHONY : bond_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named mavros_msgs_generate_messages_cpp
-
-# Build rule for target.
-mavros_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_cpp
-.PHONY : mavros_msgs_generate_messages_cpp
-
-# fast build rule for target.
-mavros_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
-.PHONY : mavros_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_cpp
-
-# Build rule for target.
-bond_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_cpp
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named nodelet_generate_messages_py
-
-# Build rule for target.
-nodelet_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_py
-.PHONY : nodelet_generate_messages_py
-
-# fast build rule for target.
-nodelet_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/nodelet_generate_messages_py.dir/build
-.PHONY : nodelet_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named rotors_gazebo_pressure_plugin
-
-# Build rule for target.
-rotors_gazebo_pressure_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_pressure_plugin
-.PHONY : rotors_gazebo_pressure_plugin
-
-# fast build rule for target.
-rotors_gazebo_pressure_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_pressure_plugin.dir/build
-.PHONY : rotors_gazebo_pressure_plugin/fast
-
-#=============================================================================
-# Target rules for targets named rotors_gazebo_noisydepth_plugin
-
-# Build rule for target.
-rotors_gazebo_noisydepth_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_noisydepth_plugin
-.PHONY : rotors_gazebo_noisydepth_plugin
-
-# fast build rule for target.
-rotors_gazebo_noisydepth_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build
-.PHONY : rotors_gazebo_noisydepth_plugin/fast
-
-#=============================================================================
-# Target rules for targets named visualization_msgs_generate_messages_eus
-
-# Build rule for target.
-visualization_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_eus
-.PHONY : visualization_msgs_generate_messages_eus
-
-# fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named rotors_gazebo_magnetometer_plugin
-
-# Build rule for target.
-rotors_gazebo_magnetometer_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_magnetometer_plugin
-.PHONY : rotors_gazebo_magnetometer_plugin
-
-# fast build rule for target.
-rotors_gazebo_magnetometer_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build
-.PHONY : rotors_gazebo_magnetometer_plugin/fast
-
-#=============================================================================
-# Target rules for targets named mavros_dummy_target
-
-# Build rule for target.
-mavros_dummy_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_dummy_target
-.PHONY : mavros_dummy_target
-
-# fast build rule for target.
-mavros_dummy_target/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build
-.PHONY : mavros_dummy_target/fast
+rotors_gazebo_fw_dynamics_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build
+.PHONY : rotors_gazebo_fw_dynamics_plugin/fast
 
 #=============================================================================
 # Target rules for targets named diagnostic_msgs_generate_messages_cpp
@@ -3028,56 +3353,30 @@ diagnostic_msgs_generate_messages_cpp/fast:
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_fw_dynamics_plugin
+# Target rules for targets named gazebo_plugins_gencfg
 
 # Build rule for target.
-rotors_gazebo_fw_dynamics_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_fw_dynamics_plugin
-.PHONY : rotors_gazebo_fw_dynamics_plugin
+gazebo_plugins_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_plugins_gencfg
+.PHONY : gazebo_plugins_gencfg
 
 # fast build rule for target.
-rotors_gazebo_fw_dynamics_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_fw_dynamics_plugin.dir/build
-.PHONY : rotors_gazebo_fw_dynamics_plugin/fast
+gazebo_plugins_gencfg/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_plugins_gencfg.dir/build
+.PHONY : gazebo_plugins_gencfg/fast
 
 #=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_eus
+# Target rules for targets named gazebo_geotagged_images_plugin
 
 # Build rule for target.
-diagnostic_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
-.PHONY : diagnostic_msgs_generate_messages_eus
+gazebo_geotagged_images_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_geotagged_images_plugin
+.PHONY : gazebo_geotagged_images_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
-.PHONY : diagnostic_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named rotors_gazebo_wind_plugin
-
-# Build rule for target.
-rotors_gazebo_wind_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_wind_plugin
-.PHONY : rotors_gazebo_wind_plugin
-
-# fast build rule for target.
-rotors_gazebo_wind_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_wind_plugin.dir/build
-.PHONY : rotors_gazebo_wind_plugin/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_lisp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+gazebo_geotagged_images_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/gazebo_geotagged_images_plugin.dir/build
+.PHONY : gazebo_geotagged_images_plugin/fast
 
 #=============================================================================
 # Target rules for targets named uuid_msgs_generate_messages_lisp
@@ -3093,82 +3392,69 @@ uuid_msgs_generate_messages_lisp/fast:
 .PHONY : uuid_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
+# Target rules for targets named rotors_gazebo_magnetometer_plugin
 
 # Build rule for target.
-diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
-.PHONY : diagnostic_msgs_generate_messages_nodejs
+rotors_gazebo_magnetometer_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_magnetometer_plugin
+.PHONY : rotors_gazebo_magnetometer_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
-.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+rotors_gazebo_magnetometer_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/build
+.PHONY : rotors_gazebo_magnetometer_plugin/fast
 
 #=============================================================================
-# Target rules for targets named mavros_msgs_generate_messages_eus
+# Target rules for targets named visualization_msgs_generate_messages_lisp
 
 # Build rule for target.
-mavros_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_eus
-.PHONY : mavros_msgs_generate_messages_eus
+visualization_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualization_msgs_generate_messages_lisp
+.PHONY : visualization_msgs_generate_messages_lisp
 
 # fast build rule for target.
-mavros_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
-.PHONY : mavros_msgs_generate_messages_eus/fast
+visualization_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_py
+# Target rules for targets named rotors_gazebo_imu_plugin
 
 # Build rule for target.
-diagnostic_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
-.PHONY : diagnostic_msgs_generate_messages_py
+rotors_gazebo_imu_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_imu_plugin
+.PHONY : rotors_gazebo_imu_plugin
 
 # fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
+rotors_gazebo_imu_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_imu_plugin.dir/build
+.PHONY : rotors_gazebo_imu_plugin/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_odometry_plugin
+# Target rules for targets named rotors_gazebo_noisydepth_plugin
 
 # Build rule for target.
-rotors_gazebo_odometry_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_odometry_plugin
-.PHONY : rotors_gazebo_odometry_plugin
+rotors_gazebo_noisydepth_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_noisydepth_plugin
+.PHONY : rotors_gazebo_noisydepth_plugin
 
 # fast build rule for target.
-rotors_gazebo_odometry_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_odometry_plugin.dir/build
-.PHONY : rotors_gazebo_odometry_plugin/fast
+rotors_gazebo_noisydepth_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_noisydepth_plugin.dir/build
+.PHONY : rotors_gazebo_noisydepth_plugin/fast
 
 #=============================================================================
-# Target rules for targets named geographic_msgs_generate_messages_cpp
+# Target rules for targets named mavros_dummy_target
 
 # Build rule for target.
-geographic_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_cpp
-.PHONY : geographic_msgs_generate_messages_cpp
+mavros_dummy_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_dummy_target
+.PHONY : mavros_dummy_target
 
 # fast build rule for target.
-geographic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
-.PHONY : geographic_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geographic_msgs_generate_messages_eus
-
-# Build rule for target.
-geographic_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_eus
-.PHONY : geographic_msgs_generate_messages_eus
-
-# fast build rule for target.
-geographic_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
-.PHONY : geographic_msgs_generate_messages_eus/fast
+mavros_dummy_target/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build
+.PHONY : mavros_dummy_target/fast
 
 #=============================================================================
 # Target rules for targets named rotors_gazebo_motor_model
@@ -3184,121 +3470,17 @@ rotors_gazebo_motor_model/fast:
 .PHONY : rotors_gazebo_motor_model/fast
 
 #=============================================================================
-# Target rules for targets named geographic_msgs_generate_messages_nodejs
+# Target rules for targets named geographic_msgs_generate_messages_eus
 
 # Build rule for target.
-geographic_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_nodejs
-.PHONY : geographic_msgs_generate_messages_nodejs
+geographic_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_eus
+.PHONY : geographic_msgs_generate_messages_eus
 
 # fast build rule for target.
-geographic_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
-.PHONY : geographic_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named uuid_msgs_generate_messages_cpp
-
-# Build rule for target.
-uuid_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_cpp
-.PHONY : uuid_msgs_generate_messages_cpp
-
-# fast build rule for target.
-uuid_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
-.PHONY : uuid_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named uuid_msgs_generate_messages_eus
-
-# Build rule for target.
-uuid_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_eus
-.PHONY : uuid_msgs_generate_messages_eus
-
-# fast build rule for target.
-uuid_msgs_generate_messages_eus/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
-.PHONY : uuid_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named mavros_msgs_generate_messages_py
-
-# Build rule for target.
-mavros_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_py
-.PHONY : mavros_msgs_generate_messages_py
-
-# fast build rule for target.
-mavros_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
-.PHONY : mavros_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named LiftDragPlugin
-
-# Build rule for target.
-LiftDragPlugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LiftDragPlugin
-.PHONY : LiftDragPlugin
-
-# fast build rule for target.
-LiftDragPlugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/LiftDragPlugin.dir/build
-.PHONY : LiftDragPlugin/fast
-
-#=============================================================================
-# Target rules for targets named uuid_msgs_generate_messages_nodejs
-
-# Build rule for target.
-uuid_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_nodejs
-.PHONY : uuid_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-uuid_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
-.PHONY : uuid_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named bond_generate_messages_py
-
-# Build rule for target.
-bond_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_py
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named uuid_msgs_generate_messages_py
-
-# Build rule for target.
-uuid_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 uuid_msgs_generate_messages_py
-.PHONY : uuid_msgs_generate_messages_py
-
-# fast build rule for target.
-uuid_msgs_generate_messages_py/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
-.PHONY : uuid_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named mavros_msgs_generate_messages_nodejs
-
-# Build rule for target.
-mavros_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_nodejs
-.PHONY : mavros_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-mavros_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
-.PHONY : mavros_msgs_generate_messages_nodejs/fast
+geographic_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+.PHONY : geographic_msgs_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named geographic_msgs_generate_messages_lisp
@@ -3314,30 +3496,121 @@ geographic_msgs_generate_messages_lisp/fast:
 .PHONY : geographic_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_multirotor_base_plugin
+# Target rules for targets named geographic_msgs_generate_messages_py
 
 # Build rule for target.
-rotors_gazebo_multirotor_base_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_multirotor_base_plugin
-.PHONY : rotors_gazebo_multirotor_base_plugin
+geographic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_py
+.PHONY : geographic_msgs_generate_messages_py
 
 # fast build rule for target.
-rotors_gazebo_multirotor_base_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_multirotor_base_plugin.dir/build
-.PHONY : rotors_gazebo_multirotor_base_plugin/fast
+geographic_msgs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+.PHONY : geographic_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named rotors_gazebo_ros_interface_plugin
+# Target rules for targets named rotors_gazebo_gps_plugin
 
 # Build rule for target.
-rotors_gazebo_ros_interface_plugin: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_ros_interface_plugin
-.PHONY : rotors_gazebo_ros_interface_plugin
+rotors_gazebo_gps_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_gps_plugin
+.PHONY : rotors_gazebo_gps_plugin
 
 # fast build rule for target.
-rotors_gazebo_ros_interface_plugin/fast:
-	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_ros_interface_plugin.dir/build
-.PHONY : rotors_gazebo_ros_interface_plugin/fast
+rotors_gazebo_gps_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_gps_plugin.dir/build
+.PHONY : rotors_gazebo_gps_plugin/fast
+
+#=============================================================================
+# Target rules for targets named rotors_gazebo_lidar_plugin
+
+# Build rule for target.
+rotors_gazebo_lidar_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotors_gazebo_lidar_plugin
+.PHONY : rotors_gazebo_lidar_plugin
+
+# fast build rule for target.
+rotors_gazebo_lidar_plugin/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_lidar_plugin.dir/build
+.PHONY : rotors_gazebo_lidar_plugin/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_eus
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_eus
+.PHONY : diagnostic_msgs_generate_messages_eus
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+.PHONY : diagnostic_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_lisp
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_py
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
+.PHONY : diagnostic_msgs_generate_messages_py
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named mavros_msgs_generate_messages_eus
+
+# Build rule for target.
+mavros_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mavros_msgs_generate_messages_eus
+.PHONY : mavros_msgs_generate_messages_eus
+
+# fast build rule for target.
+mavros_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
+.PHONY : mavros_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_nodejs
+
+# Build rule for target.
+diagnostic_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_nodejs
+.PHONY : diagnostic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+.PHONY : diagnostic_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geographic_msgs_generate_messages_cpp
+
+# Build rule for target.
+geographic_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geographic_msgs_generate_messages_cpp
+.PHONY : geographic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+.PHONY : geographic_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named gazebo_ros_velodyne_gpu_laser
@@ -3539,102 +3812,123 @@ help:
 	@echo "... mav_planning_msgs_generate_messages_py"
 	@echo "... _mav_planning_msgs_generate_messages_check_deps_PlannerService"
 	@echo "... mav_planning_msgs_genpy"
-	@echo "... realsense_gazebo_plugin"
-	@echo "... gazebo_msgs_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_eus"
+	@echo "... apriltag_ros_single_image_client_node"
+	@echo "... apriltag_ros_single_image_server_node"
+	@echo "... apriltag_ros_continuous_node"
+	@echo "... apriltag_ros_common"
+	@echo "... apriltag_ros_genpy"
+	@echo "... apriltag_ros_generate_messages_py"
+	@echo "... apriltag_ros_gennodejs"
+	@echo "... apriltag_ros_generate_messages_nodejs"
+	@echo "... apriltag_ros_generate_messages_lisp"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... apriltag_ros_geneus"
+	@echo "... tf_generate_messages_nodejs"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... bond_generate_messages_eus"
+	@echo "... apriltag_ros_generate_messages"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... nodelet_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
 	@echo "... actionlib_generate_messages_py"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... tf_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... std_srvs_generate_messages_eus"
+	@echo "... bond_generate_messages_nodejs"
+	@echo "... nodelet_generate_messages_nodejs"
+	@echo "... _apriltag_ros_generate_messages_check_deps_AnalyzeSingleImage"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... apriltag_ros_generate_messages_eus"
+	@echo "... nodelet_generate_messages_eus"
+	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... gazebo_ros_gencfg"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... apriltag_ros_single_image_detector"
 	@echo "... actionlib_generate_messages_lisp"
-	@echo "... gazebo_msgs_generate_messages_nodejs"
-	@echo "... actionlib_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... _apriltag_ros_generate_messages_check_deps_AprilTagDetection"
+	@echo "... apriltag_ros_gencpp"
 	@echo "... tf_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... apriltag_ros_continuous_detector"
+	@echo "... apriltag_ros_genlisp"
+	@echo "... apriltag_ros_generate_messages_cpp"
+	@echo "... bond_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_cpp"
+	@echo "... _apriltag_ros_generate_messages_check_deps_AprilTagDetectionArray"
+	@echo "... realsense_gazebo_plugin"
+	@echo "... gazebo_msgs_generate_messages_py"
+	@echo "... gazebo_msgs_generate_messages_lisp"
+	@echo "... gazebo_msgs_generate_messages_nodejs"
 	@echo "... gazebo_msgs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... dynamic_reconfigure_generate_messages_cpp"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... gazebo_ros_gencfg"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... dynamic_reconfigure_generate_messages_eus"
+	@echo "... dynamic_reconfigure_generate_messages_py"
+	@echo "... std_srvs_generate_messages_py"
+	@echo "... dynamic_reconfigure_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... dynamic_reconfigure_generate_messages_nodejs"
+	@echo "... gazebo_msgs_generate_messages_cpp"
+	@echo "... start_trigger"
 	@echo "... yao"
 	@echo "... ma"
 	@echo "... chao"
 	@echo "... referee_system"
-	@echo "... rotors_gazebo_lidar_plugin"
-	@echo "... rotors_gazebo_gps_plugin"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... geographic_msgs_generate_messages_py"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... rotors_gazebo_imu_plugin"
-	@echo "... gazebo_geotagged_images_plugin"
+	@echo "... rotors_gazebo_wind_plugin"
+	@echo "... rotors_gazebo_ros_interface_plugin"
+	@echo "... rotors_gazebo_pressure_plugin"
+	@echo "... rotors_gazebo_odometry_plugin"
+	@echo "... rotors_gazebo_multirotor_base_plugin"
+	@echo "... mavros_msgs_generate_messages_nodejs"
+	@echo "... mavros_msgs_generate_messages_cpp"
+	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_nodejs"
+	@echo "... LiftDragPlugin"
+	@echo "... mavros_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_eus"
+	@echo "... uuid_msgs_generate_messages_cpp"
+	@echo "... geographic_msgs_generate_messages_nodejs"
 	@echo "... rotors_gazebo_controller_interface"
+	@echo "... rotors_gazebo_mavlink_interface"
+	@echo "... topic_tools_generate_messages_py"
+	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... mavros_msgs_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_nodejs"
+	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... mav_msgs"
 	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_lisp"
-	@echo "... topic_tools_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... nodelet_generate_messages_lisp"
-	@echo "... gazebo_plugins_gencfg"
-	@echo "... nodelet_generate_messages_cpp"
-	@echo "... topic_tools_generate_messages_py"
-	@echo "... rotors_gazebo_mavlink_interface"
-	@echo "... nodelet_generate_messages_nodejs"
-	@echo "... bond_generate_messages_nodejs"
-	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_eus"
-	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... bond_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_cpp"
-	@echo "... bond_generate_messages_cpp"
-	@echo "... nodelet_generate_messages_py"
-	@echo "... rotors_gazebo_pressure_plugin"
-	@echo "... rotors_gazebo_noisydepth_plugin"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... rotors_gazebo_magnetometer_plugin"
-	@echo "... mavros_dummy_target"
-	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... rotors_gazebo_fw_dynamics_plugin"
-	@echo "... diagnostic_msgs_generate_messages_eus"
-	@echo "... rotors_gazebo_wind_plugin"
-	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... gazebo_plugins_gencfg"
+	@echo "... gazebo_geotagged_images_plugin"
 	@echo "... uuid_msgs_generate_messages_lisp"
-	@echo "... diagnostic_msgs_generate_messages_nodejs"
-	@echo "... mavros_msgs_generate_messages_eus"
-	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... rotors_gazebo_odometry_plugin"
-	@echo "... geographic_msgs_generate_messages_cpp"
-	@echo "... geographic_msgs_generate_messages_eus"
+	@echo "... rotors_gazebo_magnetometer_plugin"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... rotors_gazebo_imu_plugin"
+	@echo "... rotors_gazebo_noisydepth_plugin"
+	@echo "... mavros_dummy_target"
 	@echo "... rotors_gazebo_motor_model"
-	@echo "... geographic_msgs_generate_messages_nodejs"
-	@echo "... uuid_msgs_generate_messages_cpp"
-	@echo "... uuid_msgs_generate_messages_eus"
-	@echo "... mavros_msgs_generate_messages_py"
-	@echo "... LiftDragPlugin"
-	@echo "... uuid_msgs_generate_messages_nodejs"
-	@echo "... bond_generate_messages_py"
-	@echo "... uuid_msgs_generate_messages_py"
-	@echo "... mavros_msgs_generate_messages_nodejs"
+	@echo "... geographic_msgs_generate_messages_eus"
 	@echo "... geographic_msgs_generate_messages_lisp"
-	@echo "... rotors_gazebo_multirotor_base_plugin"
-	@echo "... rotors_gazebo_ros_interface_plugin"
+	@echo "... geographic_msgs_generate_messages_py"
+	@echo "... rotors_gazebo_gps_plugin"
+	@echo "... rotors_gazebo_lidar_plugin"
+	@echo "... diagnostic_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_lisp"
+	@echo "... diagnostic_msgs_generate_messages_py"
+	@echo "... mavros_msgs_generate_messages_eus"
+	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... geographic_msgs_generate_messages_cpp"
 	@echo "... gazebo_ros_velodyne_gpu_laser"
 	@echo "... gazebo_ros_velodyne_laser"
 	@echo "... sdf"

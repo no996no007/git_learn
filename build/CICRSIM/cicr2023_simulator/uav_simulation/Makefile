@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/rule
+.PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/rule
+
+# Convenience name for target.
+start_trigger: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/rule
+
+.PHONY : start_trigger
+
+# fast build rule for target.
+start_trigger/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build
+.PHONY : start_trigger/fast
+
+# Convenience name for target.
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule
 .PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir/rule
@@ -308,6 +323,33 @@ src/referee_system.cpp.s:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.s
 .PHONY : src/referee_system.cpp.s
 
+src/start_trigger.o: src/start_trigger.cpp.o
+
+.PHONY : src/start_trigger.o
+
+# target to build an object file
+src/start_trigger.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.o
+.PHONY : src/start_trigger.cpp.o
+
+src/start_trigger.i: src/start_trigger.cpp.i
+
+.PHONY : src/start_trigger.i
+
+# target to preprocess a source file
+src/start_trigger.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.i
+.PHONY : src/start_trigger.cpp.i
+
+src/start_trigger.s: src/start_trigger.cpp.s
+
+.PHONY : src/start_trigger.s
+
+# target to generate assembly for a file
+src/start_trigger.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.s
+.PHONY : src/start_trigger.cpp.s
+
 src/yao.o: src/yao.cpp.o
 
 .PHONY : src/yao.o
@@ -347,6 +389,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... start_trigger"
 	@echo "... yao"
 	@echo "... install/strip"
 	@echo "... ma"
@@ -361,6 +404,9 @@ help:
 	@echo "... src/referee_system.o"
 	@echo "... src/referee_system.i"
 	@echo "... src/referee_system.s"
+	@echo "... src/start_trigger.o"
+	@echo "... src/start_trigger.i"
+	@echo "... src/start_trigger.s"
 	@echo "... src/yao.o"
 	@echo "... src/yao.i"
 	@echo "... src/yao.s"

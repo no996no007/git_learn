@@ -7,10 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/tao/git_test/git_learn/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/tao/git_test/git_learn/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/tao/git_test/git_learn/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/tao/git_test/git_learn/build'
-export PYTHONPATH="/home/tao/git_test/git_learn/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/tao/git_test/git_learn/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/tao/git_test/git_learn/src:$ROS_PACKAGE_PATH"

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 include CICRSIM/rotors_simulator/rotors_comm/CMakeFiles/_rotors_comm_generate_messages_check_deps_WindSpeed.dir/progress.make
 
 CICRSIM/rotors_simulator/rotors_comm/CMakeFiles/_rotors_comm_generate_messages_check_deps_WindSpeed:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_comm/msg/WindSpeed.msg geometry_msgs/Vector3:std_msgs/Header
+	cd /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_comm/msg/WindSpeed.msg std_msgs/Header:geometry_msgs/Vector3
 
 _rotors_comm_generate_messages_check_deps_WindSpeed: CICRSIM/rotors_simulator/rotors_comm/CMakeFiles/_rotors_comm_generate_messages_check_deps_WindSpeed
 _rotors_comm_generate_messages_check_deps_WindSpeed: CICRSIM/rotors_simulator/rotors_comm/CMakeFiles/_rotors_comm_generate_messages_check_deps_WindSpeed.dir/build.make
