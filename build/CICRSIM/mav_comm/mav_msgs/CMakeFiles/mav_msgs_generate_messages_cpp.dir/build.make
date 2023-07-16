@@ -72,8 +72,8 @@ CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_cpp: /home/tao/g
 
 /home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg
-/home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/tao/git_test/git_learn/devel/include/mav_msgs/AttitudeThrust.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from mav_msgs/AttitudeThrust.msg"

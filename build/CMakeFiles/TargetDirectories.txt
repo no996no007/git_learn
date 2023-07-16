@@ -254,6 +254,8 @@
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/install/strip.dir
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/install/local.dir
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/install.dir
+/home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/detector.dir
+/home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/list_install_components.dir
 /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_server_node.dir
@@ -341,7 +343,6 @@
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/rebuild_cache.dir
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/edit_cache.dir
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/test.dir
-/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/yao.dir
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/install/strip.dir
 /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/ma.dir

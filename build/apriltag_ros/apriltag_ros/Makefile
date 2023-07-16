@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/rule
+.PHONY : apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/rule
+
+# Convenience name for target.
+detector: apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/rule
+
+.PHONY : detector
+
+# fast build rule for target.
+detector/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build
+.PHONY : detector/fast
+
+# Convenience name for target.
+apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/rule:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/rule
+.PHONY : apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/rule
+
+# Convenience name for target.
+start_trigger: apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/rule
+
+.PHONY : start_trigger
+
+# fast build rule for target.
+start_trigger/fast:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build
+.PHONY : start_trigger/fast
+
+# Convenience name for target.
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/rule:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/rule
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_client_node.dir/rule
@@ -977,6 +1007,33 @@ src/continuous_detector.cpp.s:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_continuous_detector.dir/src/continuous_detector.cpp.s
 .PHONY : src/continuous_detector.cpp.s
 
+src/detector.o: src/detector.cpp.o
+
+.PHONY : src/detector.o
+
+# target to build an object file
+src/detector.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/src/detector.cpp.o
+.PHONY : src/detector.cpp.o
+
+src/detector.i: src/detector.cpp.i
+
+.PHONY : src/detector.i
+
+# target to preprocess a source file
+src/detector.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/src/detector.cpp.i
+.PHONY : src/detector.cpp.i
+
+src/detector.s: src/detector.cpp.s
+
+.PHONY : src/detector.s
+
+# target to generate assembly for a file
+src/detector.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/src/detector.cpp.s
+.PHONY : src/detector.cpp.s
+
 src/single_image_detector.o: src/single_image_detector.cpp.o
 
 .PHONY : src/single_image_detector.o
@@ -1004,6 +1061,33 @@ src/single_image_detector.cpp.s:
 	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_single_image_detector.dir/src/single_image_detector.cpp.s
 .PHONY : src/single_image_detector.cpp.s
 
+src/start_trigger.o: src/start_trigger.cpp.o
+
+.PHONY : src/start_trigger.o
+
+# target to build an object file
+src/start_trigger.cpp.o:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.o
+.PHONY : src/start_trigger.cpp.o
+
+src/start_trigger.i: src/start_trigger.cpp.i
+
+.PHONY : src/start_trigger.i
+
+# target to preprocess a source file
+src/start_trigger.cpp.i:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.i
+.PHONY : src/start_trigger.cpp.i
+
+src/start_trigger.s: src/start_trigger.cpp.s
+
+.PHONY : src/start_trigger.s
+
+# target to generate assembly for a file
+src/start_trigger.cpp.s:
+	cd /home/tao/git_test/git_learn/build && $(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/src/start_trigger.cpp.s
+.PHONY : src/start_trigger.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1013,6 +1097,8 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... detector"
+	@echo "... start_trigger"
 	@echo "... apriltag_ros_single_image_client_node"
 	@echo "... list_install_components"
 	@echo "... apriltag_ros_single_image_server_node"
@@ -1077,9 +1163,15 @@ help:
 	@echo "... src/continuous_detector.o"
 	@echo "... src/continuous_detector.i"
 	@echo "... src/continuous_detector.s"
+	@echo "... src/detector.o"
+	@echo "... src/detector.i"
+	@echo "... src/detector.s"
 	@echo "... src/single_image_detector.o"
 	@echo "... src/single_image_detector.i"
 	@echo "... src/single_image_detector.s"
+	@echo "... src/start_trigger.o"
+	@echo "... src/start_trigger.i"
+	@echo "... src/start_trigger.s"
 .PHONY : help
 
 

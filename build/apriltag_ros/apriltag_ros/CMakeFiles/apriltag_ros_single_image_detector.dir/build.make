@@ -152,12 +152,12 @@ apriltag_ros_single_image_detector_EXTERNAL_OBJECTS =
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/libxmlrpcpp.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/libtf2.so
-/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/librosconsole.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/librosconsole_log4cxx.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/librosconsole_backend_interface.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/librostime.so
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
 /home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so: /opt/ros/noetic/lib/libcpp_common.so

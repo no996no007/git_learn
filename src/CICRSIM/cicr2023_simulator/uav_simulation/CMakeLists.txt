@@ -51,14 +51,19 @@ target_link_libraries(ma
   ${catkin_LIBRARIES}
 )
 
-add_executable(start_trigger src/start_trigger.cpp)
-target_link_libraries(start_trigger
-  ${catkin_LIBRARIES}
-)
+# add_executable(start_trigger src/start_trigger.cpp)
+# target_link_libraries(start_trigger
+#   ${catkin_LIBRARIES}
+# )
+
+# add_executable(detector src/detector.cpp)
+# target_link_libraries(detector
+#   ${catkin_LIBRARIES}
+# )
 
 catkin_install_python(PROGRAMS
   src/keyboard_control.py
   src/command_process.py
-  src/controller.py
+  # src/controller.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

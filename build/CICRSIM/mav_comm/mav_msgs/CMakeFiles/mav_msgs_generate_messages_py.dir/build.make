@@ -72,8 +72,8 @@ CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_py: /home/tao/gi
 
 /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg/_AttitudeThrust.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG mav_msgs/AttitudeThrust"
 	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs/msg

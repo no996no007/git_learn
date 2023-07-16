@@ -2092,6 +2092,32 @@ mav_planning_msgs_genpy/fast:
 .PHONY : mav_planning_msgs_genpy/fast
 
 #=============================================================================
+# Target rules for targets named detector
+
+# Build rule for target.
+detector: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 detector
+.PHONY : detector
+
+# fast build rule for target.
+detector/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/detector.dir/build
+.PHONY : detector/fast
+
+#=============================================================================
+# Target rules for targets named start_trigger
+
+# Build rule for target.
+start_trigger: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 start_trigger
+.PHONY : start_trigger
+
+# fast build rule for target.
+start_trigger/fast:
+	$(MAKE) -f apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build.make apriltag_ros/apriltag_ros/CMakeFiles/start_trigger.dir/build
+.PHONY : start_trigger/fast
+
+#=============================================================================
 # Target rules for targets named apriltag_ros_single_image_client_node
 
 # Build rule for target.
@@ -2909,19 +2935,6 @@ gazebo_msgs_generate_messages_cpp: cmake_check_build_system
 gazebo_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named start_trigger
-
-# Build rule for target.
-start_trigger: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 start_trigger
-.PHONY : start_trigger
-
-# fast build rule for target.
-start_trigger/fast:
-	$(MAKE) -f CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build.make CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/start_trigger.dir/build
-.PHONY : start_trigger/fast
 
 #=============================================================================
 # Target rules for targets named yao
@@ -3812,6 +3825,8 @@ help:
 	@echo "... mav_planning_msgs_generate_messages_py"
 	@echo "... _mav_planning_msgs_generate_messages_check_deps_PlannerService"
 	@echo "... mav_planning_msgs_genpy"
+	@echo "... detector"
+	@echo "... start_trigger"
 	@echo "... apriltag_ros_single_image_client_node"
 	@echo "... apriltag_ros_single_image_server_node"
 	@echo "... apriltag_ros_continuous_node"
@@ -3875,7 +3890,6 @@ help:
 	@echo "... std_srvs_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... gazebo_msgs_generate_messages_cpp"
-	@echo "... start_trigger"
 	@echo "... yao"
 	@echo "... ma"
 	@echo "... chao"
