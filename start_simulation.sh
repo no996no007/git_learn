@@ -18,6 +18,9 @@ sleep 1.5s
 gnome-terminal -t "uav_simulation" -x bash -c "source devel/setup.bash;rosrun uav_simulation start_trigger;exec bash;"
 sleep 1.5s
 
+gnome-terminal -t "uav_simulation" -x bash -c "source devel/setup.bash;roslaunch apriltag_ros continuous_detection.launch^C;exec bash;"
+sleep 1.5s
+
 # #启动keyboard控制器
 # gnome-terminal -t "uav_simulation" -x bash -c "source devel/setup.bash;rosrun uav_simulation keyboard_control.py;exec bash;"
 # sleep 1.5s
