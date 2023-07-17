@@ -1,0 +1,8 @@
+prefix=/home/tao/no996/devel
+
+Name: uav_gazebo
+Description: Description of uav_gazebo
+Version: 0.0.0
+Cflags: -I/home/tao/no996/src/CICRSIM-master/cicr2023_simulator/uav_gazebo/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs mav_msgs nav_msgs roscpp sensor_msgs
