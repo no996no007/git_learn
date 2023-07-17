@@ -44,7 +44,7 @@ def centre_link()
     return Link
 
 #速度设置的函数
-def speedset((xd,yd,zd)):
+def speedset(xd,yd,zd):
     Kp=1.5/0.2 # 即在x米以内才开始减速，其他时候全速(为3)前进！
     x_speed=xd*Kp
     y_speed=yd*Kp
@@ -58,7 +58,7 @@ def speedset((xd,yd,zd)):
         x_speed=x_speed*abs(x_speed)/abs(max_speed)
         y_speed=y_speed*abs(y_speed)/abs(max_speed)
         z_speed=z_speed*abs(z_speed)/abs(max_speed)
-    return(x_speed,y_speed,z_speed)
+    return (x_speed,y_speed,z_speed)
   
 
 
@@ -138,7 +138,7 @@ def set_world_linear_by_dst_point(xyzo):
     backdir=(-link[0],-link[1])#远离障碍物速度方向
 
     #判断绕行障碍物速度方向
-    if (x_speed*link[1]-y_speed*link[0])>0:
+    if (speedxyz[0]*link[1]-speedxyz[1]*link[0])>0:
         direct=(link[1],-link[0])
     else:
         direct=(-link[1],link[0])
