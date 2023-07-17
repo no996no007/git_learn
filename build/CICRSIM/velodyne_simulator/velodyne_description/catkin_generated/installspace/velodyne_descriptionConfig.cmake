@@ -67,14 +67,14 @@ set(velodyne_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(velodyne_description_SOURCE_PREFIX /home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description)
-  set(velodyne_description_DEVEL_PREFIX /home/tao/git_test/git_learn/devel)
+  set(velodyne_description_SOURCE_PREFIX /home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description)
+  set(velodyne_description_DEVEL_PREFIX /home/tao/no996/devel)
   set(velodyne_description_INSTALL_PREFIX "")
   set(velodyne_description_PREFIX ${velodyne_description_DEVEL_PREFIX})
 else()
   set(velodyne_description_SOURCE_PREFIX "")
   set(velodyne_description_DEVEL_PREFIX "")
-  set(velodyne_description_INSTALL_PREFIX /home/tao/git_test/git_learn/install)
+  set(velodyne_description_INSTALL_PREFIX /home/tao/no996/install)
   set(velodyne_description_PREFIX ${velodyne_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/tao/git_test/git_learn/install/lib;/home/tao/git_test/git_learn/devel/lib;/home/tao/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/tao/no996/install/lib;/home/tao/git_test/git_learn/devel/lib;/home/tao/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

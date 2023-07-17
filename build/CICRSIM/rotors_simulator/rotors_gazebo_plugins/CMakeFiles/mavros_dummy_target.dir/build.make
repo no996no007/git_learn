@@ -43,17 +43,17 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for mavros_dummy_target.
 
 # Include the progress variables for this target.
 include CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/progress.make
 
-CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/mavros
+CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/mavros
 
 
 mavros_dummy_target: CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target
@@ -67,10 +67,10 @@ CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.di
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/build
 
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins && $(CMAKE_COMMAND) -P CMakeFiles/mavros_dummy_target.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins && $(CMAKE_COMMAND) -P CMakeFiles/mavros_dummy_target.dir/cmake_clean.cmake
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/clean
 
 CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins /home/tao/no996/build /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mavros_dummy_target.dir/depend
 

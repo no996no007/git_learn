@@ -43,26 +43,26 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for referee_msgs_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/progress.make
 
-CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp
+CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp
 
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp: /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from referee_msgs/Apriltag_info.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg -Ireferee_msgs:/home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p referee_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp: /home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from referee_msgs/Apriltag_info.msg"
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg -Ireferee_msgs:/home/tao/no996/src/CICRSIM/referee_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p referee_msgs -o /home/tao/no996/devel/share/common-lisp/ros/referee_msgs/msg
 
 referee_msgs_generate_messages_lisp: CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp
-referee_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp
+referee_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/referee_msgs/msg/Apriltag_info.lisp
 referee_msgs_generate_messages_lisp: CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : referee_msgs_generate_messages_lisp
@@ -73,10 +73,10 @@ CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/build: r
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/build
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/clean
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/referee_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/referee_msgs /home/tao/no996/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_lisp.dir/depend
 

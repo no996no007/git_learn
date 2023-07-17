@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h
+/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_gazebo_plugins/include/velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h
 ros/ros.h
 -
 ros/callback_queue.h
@@ -42,7 +42,7 @@ boost/thread/mutex.hpp
 boost/thread/lock_guard.hpp
 -
 
-/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp
+/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_gazebo_plugins/src/GazeboRosVelodyneLaser.cpp
 velodyne_gazebo_plugins/GazeboRosVelodyneLaser.h
 -
 algorithm

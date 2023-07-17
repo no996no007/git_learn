@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for referee_msgs_genlisp.
 
@@ -63,10 +63,10 @@ CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/build: referee_msgs_gen
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/build
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_genlisp.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_genlisp.dir/cmake_clean.cmake
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/clean
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/referee_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/referee_msgs /home/tao/no996/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_genlisp.dir/depend
 

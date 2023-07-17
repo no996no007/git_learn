@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/tao/git_test/git_learn/build'
+export PWD='/home/tao/no996/build'

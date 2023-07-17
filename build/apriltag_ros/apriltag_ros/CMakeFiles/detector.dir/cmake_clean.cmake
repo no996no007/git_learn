@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/detector"
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/detector.pdb"
+  "/home/tao/no996/devel/lib/apriltag_ros/detector"
+  "/home/tao/no996/devel/lib/apriltag_ros/detector.pdb"
   "CMakeFiles/detector.dir/src/detector.cpp.o"
 )
 

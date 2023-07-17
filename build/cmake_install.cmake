@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src
+# Install script for directory: /home/tao/no996/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,106 +49,106 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/_setup_util.py")
+   "/home/tao/no996/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE PROGRAM FILES "/home/tao/no996/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/env.sh")
+   "/home/tao/no996/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE PROGRAM FILES "/home/tao/no996/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/setup.bash;/home/tao/git_test/git_learn/install/local_setup.bash")
+   "/home/tao/no996/install/setup.bash;/home/tao/no996/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/setup.bash"
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE FILE FILES
+    "/home/tao/no996/build/catkin_generated/installspace/setup.bash"
+    "/home/tao/no996/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/setup.sh;/home/tao/git_test/git_learn/install/local_setup.sh")
+   "/home/tao/no996/install/setup.sh;/home/tao/no996/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/setup.sh"
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE FILE FILES
+    "/home/tao/no996/build/catkin_generated/installspace/setup.sh"
+    "/home/tao/no996/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/setup.zsh;/home/tao/git_test/git_learn/install/local_setup.zsh")
+   "/home/tao/no996/install/setup.zsh;/home/tao/no996/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/setup.zsh"
-    "/home/tao/git_test/git_learn/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE FILE FILES
+    "/home/tao/no996/build/catkin_generated/installspace/setup.zsh"
+    "/home/tao/no996/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/tao/git_test/git_learn/install/.rosinstall")
+   "/home/tao/no996/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/tao/git_test/git_learn/install" TYPE FILE FILES "/home/tao/git_test/git_learn/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/tao/no996/install" TYPE FILE FILES "/home/tao/no996/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tao/git_test/git_learn/build/gtest/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_comm/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_description/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_system_msgs/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_description/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_simulator/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/gazebo_map_generator/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_gazebo/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_gazebo_plugins/cmake_install.cmake")
-  include("/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo/cmake_install.cmake")
+  include("/home/tao/no996/build/gtest/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/mav_comm/mav_comm/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/rotors_simulator/rotors_description/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/mav_comm/mav_state_machine_msgs/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/mav_comm/mav_system_msgs/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/referee_msgs/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/rotors_simulator/rotors_comm/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/mav_comm/mav_msgs/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/velodyne_simulator/velodyne_description/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/velodyne_simulator/velodyne_simulator/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/gazebo_map_generator/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/mav_comm/mav_planning_msgs/cmake_install.cmake")
+  include("/home/tao/no996/build/apriltag_ros/apriltag_ros/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/cicr2023_simulator/uav_gazebo/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/cicr2023_simulator/uav_simulation/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/rotors_simulator/rotors_gazebo_plugins/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/velodyne_simulator/velodyne_gazebo_plugins/cmake_install.cmake")
+  include("/home/tao/no996/build/CICRSIM-master/rotors_simulator/rotors_gazebo/cmake_install.cmake")
 
 endif()
 
@@ -160,5 +160,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tao/git_test/git_learn/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tao/no996/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

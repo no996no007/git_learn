@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description
+# Install script for directory: /home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,27 +38,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_descriptionConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_descriptionConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_descriptionConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/velodyne_simulator/velodyne_description/catkin_generated/installspace/velodyne_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/velodyne_description" TYPE DIRECTORY FILES
-    "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/launch"
-    "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/meshes"
-    "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/rviz"
-    "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/urdf"
-    "/home/tao/git_test/git_learn/src/CICRSIM/velodyne_simulator/velodyne_description/world"
+    "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/launch"
+    "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/meshes"
+    "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/rviz"
+    "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/urdf"
+    "/home/tao/no996/src/CICRSIM/velodyne_simulator/velodyne_description/world"
     )
 endif()
 

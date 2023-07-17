@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation
+# Install script for directory: /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_simulation/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulationConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulationConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulationConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/uav_simulationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_simulation" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_simulation" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/keyboard_control.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/keyboard_control.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/command_process.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/uav_simulation" TYPE PROGRAM FILES "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/catkin_generated/installspace/command_process.py")
 endif()
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
+/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
 ros/ros.h
 -
 geometry_msgs/PoseStamped.h
@@ -18,7 +18,7 @@ gazebo_msgs/ModelState.h
 nav_msgs/Odometry.h
 -
 referee_msgs/Apriltag_info.h
-/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_msgs/Apriltag_info.h
+/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_msgs/Apriltag_info.h
 std_msgs/Bool.h
 -
 iostream

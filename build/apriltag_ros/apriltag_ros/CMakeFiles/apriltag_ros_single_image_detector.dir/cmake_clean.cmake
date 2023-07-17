@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.pdb"
-  "/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_single_image_detector.so"
+  "/home/tao/no996/devel/lib/libapriltag_ros_single_image_detector.pdb"
+  "/home/tao/no996/devel/lib/libapriltag_ros_single_image_detector.so"
   "CMakeFiles/apriltag_ros_single_image_detector.dir/src/single_image_detector.cpp.o"
 )
 

@@ -43,30 +43,30 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for sdf.
 
 # Include the progress variables for this target.
 include CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/progress.make
 
-CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
+CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
 
 
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris.xacro
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.xacro
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/component_snippets.xacro
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf"
-	cd /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo && rm -f /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
-	cd /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo && /usr/bin/python3 /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/scripts/xacro.py -o /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.xacro enable_mavlink_interface:=true enable_ground_truth:=false enable_wind:=false enable_logging:=false rotors_description_dir:=/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description
-	cd /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo && gz sdf -p /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf >> /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
-	cd /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo && rm -f /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris.xacro
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.xacro
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/component_snippets.xacro
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf"
+	cd /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo && rm -f /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
+	cd /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo && /usr/bin/python3 /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/scripts/xacro.py -o /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.xacro enable_mavlink_interface:=true enable_ground_truth:=false enable_wind:=false enable_logging:=false rotors_description_dir:=/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description
+	cd /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo && gz sdf -p /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf >> /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
+	cd /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo && rm -f /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/rotors_description/urdf/iris_base.urdf
 
 sdf: CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf
-sdf: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
+sdf: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf
 sdf: CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/build.make
 
 .PHONY : sdf
@@ -77,10 +77,10 @@ CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/build: sdf
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/build
 
 CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/sdf.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo && $(CMAKE_COMMAND) -P CMakeFiles/sdf.dir/cmake_clean.cmake
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/clean
 
 CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo /home/tao/no996/build /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/rotors_simulator/rotors_gazebo/CMakeFiles/sdf.dir/depend
 

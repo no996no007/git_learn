@@ -1,4 +1,4 @@
 # generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
 
-set(mav_system_msgs_MSG_INCLUDE_DIRS "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_system_msgs/msg")
+set(mav_system_msgs_MSG_INCLUDE_DIRS "/home/tao/no996/src/CICRSIM-master/mav_comm/mav_system_msgs/msg")
 set(mav_system_msgs_MSG_DEPENDENCIES std_msgs)

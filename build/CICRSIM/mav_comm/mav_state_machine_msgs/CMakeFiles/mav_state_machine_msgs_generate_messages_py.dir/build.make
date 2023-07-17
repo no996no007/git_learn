@@ -43,50 +43,50 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for mav_state_machine_msgs_generate_messages_py.
 
 # Include the progress variables for this target.
 include CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/progress.make
 
-CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
-CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
-CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
-CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
+CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
+CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
+CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
+CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
 
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG mav_state_machine_msgs/StartStopTask"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg -Imav_state_machine_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mav_state_machine_msgs -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG mav_state_machine_msgs/StartStopTask"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg -Imav_state_machine_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mav_state_machine_msgs -o /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV mav_state_machine_msgs/RunTaskService"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv -Imav_state_machine_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mav_state_machine_msgs -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py: /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV mav_state_machine_msgs/RunTaskService"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv -Imav_state_machine_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p mav_state_machine_msgs -o /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for mav_state_machine_msgs"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg --initpy
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for mav_state_machine_msgs"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg --initpy
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for mav_state_machine_msgs"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv --initpy
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
+/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for mav_state_machine_msgs"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv --initpy
 
 mav_state_machine_msgs_generate_messages_py: CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py
-mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
-mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
-mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
-mav_state_machine_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
+mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/_StartStopTask.py
+mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/_RunTaskService.py
+mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/msg/__init__.py
+mav_state_machine_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs/srv/__init__.py
 mav_state_machine_msgs_generate_messages_py: CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/build.make
 
 .PHONY : mav_state_machine_msgs_generate_messages_py
@@ -97,10 +97,10 @@ CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_genera
 .PHONY : CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/build
 
 CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/clean
 
 CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs /home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/mav_comm/mav_state_machine_msgs/CMakeFiles/mav_state_machine_msgs_generate_messages_py.dir/depend
 

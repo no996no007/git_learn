@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_comm
+# Install script for directory: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_comm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/msg" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_comm/msg/WindSpeed.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/msg" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_comm/msg/WindSpeed.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/include/rotors_comm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/no996/devel/include/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/roseus/ros/rotors_comm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/roseus/ros/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/common-lisp/ros/rotors_comm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/common-lisp/ros/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/rotors_comm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/gennodejs/ros/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/rotors_comm")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/no996/devel/lib/python3/dist-packages/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/rotors_comm")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/no996/devel/lib/python3/dist-packages/rotors_comm")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_comm-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_commConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_commConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_commConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_comm/catkin_generated/installspace/rotors_commConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_comm/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_comm" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_comm/package.xml")
 endif()
 

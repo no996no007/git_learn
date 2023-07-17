@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs
+# Install script for directory: /home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,57 +38,57 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/msg" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/msg" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/msg/StartStopTask.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/srv" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/srv" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/srv/RunTaskService.srv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/include/mav_state_machine_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/no996/devel/include/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/roseus/ros/mav_state_machine_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/roseus/ros/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_state_machine_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/common-lisp/ros/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/mav_state_machine_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/gennodejs/ros/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_state_machine_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/no996/devel/lib/python3/dist-packages/mav_state_machine_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgsConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgsConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgsConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/mav_comm/mav_state_machine_msgs/catkin_generated/installspace/mav_state_machine_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_state_machine_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_state_machine_msgs" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/mav_comm/mav_state_machine_msgs/package.xml")
 endif()
 

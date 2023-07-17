@@ -1,9 +1,11 @@
 {
     "python.autoComplete.extraPaths": [
+        "/home/tao/no996/devel/lib/python3/dist-packages",
         "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     "python.analysis.extraPaths": [
+        "/home/tao/no996/devel/lib/python3/dist-packages",
         "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
     ]

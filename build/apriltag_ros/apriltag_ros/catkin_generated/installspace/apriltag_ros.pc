@@ -1,4 +1,4 @@
-prefix=/home/tao/git_test/git_learn/install
+prefix=/home/tao/no996/install
 
 Name: apriltag_ros
 Description: Description of apriltag_ros

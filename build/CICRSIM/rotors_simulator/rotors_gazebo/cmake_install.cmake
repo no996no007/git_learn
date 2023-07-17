@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo
+# Install script for directory: /home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazeboConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazeboConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazeboConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo/catkin_generated/installspace/rotors_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/launch" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/launch" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/models" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/models" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/resource" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/resource/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/resource" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/resource/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/worlds" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/worlds/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rotors_gazebo/worlds" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/worlds/")
 endif()
 

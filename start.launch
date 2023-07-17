@@ -1,0 +1,6 @@
+<launch>
+    <include file = "$(find apriltag_ros)/launch/continuous_detection.launch"/>
+    <node pkg="apriltag_ros" type="controller.py" name="controller"/>
+    <node pkg="apriltag_ros" type="start_trigger" name="start_trigger"/>
+    <node pkg="apriltag_ros" type="detector" name="detector" output="screen"/>
+</launch>

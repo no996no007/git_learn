@@ -67,14 +67,14 @@ set(uav_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(uav_gazebo_SOURCE_PREFIX /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo)
-  set(uav_gazebo_DEVEL_PREFIX /home/tao/git_test/git_learn/devel)
+  set(uav_gazebo_SOURCE_PREFIX /home/tao/no996/src/CICRSIM-master/cicr2023_simulator/uav_gazebo)
+  set(uav_gazebo_DEVEL_PREFIX /home/tao/no996/devel)
   set(uav_gazebo_INSTALL_PREFIX "")
   set(uav_gazebo_PREFIX ${uav_gazebo_DEVEL_PREFIX})
 else()
   set(uav_gazebo_SOURCE_PREFIX "")
   set(uav_gazebo_DEVEL_PREFIX "")
-  set(uav_gazebo_INSTALL_PREFIX /home/tao/git_test/git_learn/install)
+  set(uav_gazebo_INSTALL_PREFIX /home/tao/no996/install)
   set(uav_gazebo_PREFIX ${uav_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(uav_gazebo_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/include " STREQUAL " ")
+if(NOT "/home/tao/no996/src/CICRSIM-master/cicr2023_simulator/uav_gazebo/include " STREQUAL " ")
   set(uav_gazebo_INCLUDE_DIRS "")
-  set(_include_dirs "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/include")
+  set(_include_dirs "/home/tao/no996/src/CICRSIM-master/cicr2023_simulator/uav_gazebo/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/i
         message(FATAL_ERROR "Project 'uav_gazebo' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'uav_gazebo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'uav_gazebo' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/tao/no996/src/CICRSIM-master/cicr2023_simulator/uav_gazebo/${idir}'.  ${_report}")
     endif()
     _list_append_unique(uav_gazebo_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/tao/git_test/git_learn/devel/lib;/home/tao/git_test/git_learn/devel/lib;/home/tao/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/tao/no996/devel/lib;/home/tao/no996/devel/lib;/home/tao/git_test/git_learn/devel/lib;/home/tao/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

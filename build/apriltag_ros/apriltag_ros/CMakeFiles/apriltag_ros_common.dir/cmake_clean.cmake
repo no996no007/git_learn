@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_common.pdb"
-  "/home/tao/git_test/git_learn/devel/lib/libapriltag_ros_common.so"
+  "/home/tao/no996/devel/lib/libapriltag_ros_common.pdb"
+  "/home/tao/no996/devel/lib/libapriltag_ros_common.so"
   "CMakeFiles/apriltag_ros_common.dir/src/common_functions.cpp.o"
 )
 
