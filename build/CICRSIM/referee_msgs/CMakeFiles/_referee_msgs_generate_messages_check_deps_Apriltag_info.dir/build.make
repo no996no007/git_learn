@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for _referee_msgs_generate_messages_check_deps_Apriltag_info.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 include CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/progress.make
 
 CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py referee_msgs /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg 
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py referee_msgs /home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg 
 
 _referee_msgs_generate_messages_check_deps_Apriltag_info: CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info
 _referee_msgs_generate_messages_check_deps_Apriltag_info: CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/build.make
@@ -67,10 +67,10 @@ CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_April
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/build
 
 CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/cmake_clean.cmake
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/clean
 
 CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/referee_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/referee_msgs /home/tao/no996/build/CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/_referee_msgs_generate_messages_check_deps_Apriltag_info.dir/depend
 

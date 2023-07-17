@@ -43,89 +43,89 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for mav_msgs_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/progress.make
 
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp
-CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp
+CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp
 
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from mav_msgs/Actuators.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from mav_msgs/Actuators.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from mav_msgs/AttitudeThrust.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from mav_msgs/AttitudeThrust.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from mav_msgs/RateThrust.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from mav_msgs/RateThrust.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from mav_msgs/RollPitchYawrateThrust.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from mav_msgs/RollPitchYawrateThrust.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from mav_msgs/TorqueThrust.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from mav_msgs/TorqueThrust.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from mav_msgs/Status.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from mav_msgs/Status.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from mav_msgs/FilteredSensorData.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from mav_msgs/FilteredSensorData.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg
-/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from mav_msgs/GpsWaypoint.msg"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg -Imav_msgs:/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg
+/home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from mav_msgs/GpsWaypoint.msg"
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg -Imav_msgs:/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg
 
 mav_msgs_generate_messages_lisp: CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp
-mav_msgs_generate_messages_lisp: /home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Actuators.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/AttitudeThrust.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RateThrust.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/RollPitchYawrateThrust.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/TorqueThrust.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/Status.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/FilteredSensorData.lisp
+mav_msgs_generate_messages_lisp: /home/tao/no996/devel/share/common-lisp/ros/mav_msgs/msg/GpsWaypoint.lisp
 mav_msgs_generate_messages_lisp: CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/build.make
 
 .PHONY : mav_msgs_generate_messages_lisp
@@ -136,10 +136,10 @@ CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/build: 
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/build
 
 CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/clean
 
 CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_lisp.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/gazebo_map_generator
+# Install script for directory: /home/tao/no996/src/CICRSIM/gazebo_map_generator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generator.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_map_generator/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generatorConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generatorConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generatorConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/gazebo_map_generator/catkin_generated/installspace/gazebo_map_generatorConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_map_generator" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/gazebo_map_generator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_map_generator" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/gazebo_map_generator/package.xml")
 endif()
 

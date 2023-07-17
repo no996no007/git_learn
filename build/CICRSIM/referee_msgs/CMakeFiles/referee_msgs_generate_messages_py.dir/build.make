@@ -43,33 +43,33 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for referee_msgs_generate_messages_py.
 
 # Include the progress variables for this target.
 include CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/progress.make
 
-CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
-CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py
+CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
+CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py
 
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py: /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG referee_msgs/Apriltag_info"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg -Ireferee_msgs:/home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p referee_msgs -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg
+/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py: /home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG referee_msgs/Apriltag_info"
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg -Ireferee_msgs:/home/tao/no996/src/CICRSIM/referee_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p referee_msgs -o /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg
 
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for referee_msgs"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg --initpy
+/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py: /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for referee_msgs"
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg --initpy
 
 referee_msgs_generate_messages_py: CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py
-referee_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
-referee_msgs_generate_messages_py: /home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py
+referee_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/_Apriltag_info.py
+referee_msgs_generate_messages_py: /home/tao/no996/devel/lib/python3/dist-packages/referee_msgs/msg/__init__.py
 referee_msgs_generate_messages_py: CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/build.make
 
 .PHONY : referee_msgs_generate_messages_py
@@ -80,10 +80,10 @@ CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/build: ref
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/build
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/referee_msgs && $(CMAKE_COMMAND) -P CMakeFiles/referee_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/clean
 
 CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs /home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/referee_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/referee_msgs /home/tao/no996/build/CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/referee_msgs/CMakeFiles/referee_msgs_generate_messages_py.dir/depend
 

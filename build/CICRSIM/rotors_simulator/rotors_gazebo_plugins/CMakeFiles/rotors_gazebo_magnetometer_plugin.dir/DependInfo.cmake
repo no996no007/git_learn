@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/gazebo_magnetometer_plugin.cpp" "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/src/gazebo_magnetometer_plugin.cpp.o"
+  "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/gazebo_magnetometer_plugin.cpp" "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/rotors_gazebo_magnetometer_plugin.dir/src/gazebo_magnetometer_plugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -40,9 +40,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/OGRE/Paging"
   "/usr/include/opencv4"
   "CICRSIM/rotors_simulator/rotors_gazebo_plugins"
-  "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include"
-  "/home/tao/git_test/git_learn/devel/include"
-  "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/include"
+  "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include"
+  "/home/tao/no996/devel/include"
+  "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-11/gazebo/msgs"
@@ -61,7 +61,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mav_msgs.dir/DependInfo.cmake"
+  "/home/tao/no996/build/CICRSIM/rotors_simulator/rotors_gazebo_plugins/CMakeFiles/mav_msgs.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

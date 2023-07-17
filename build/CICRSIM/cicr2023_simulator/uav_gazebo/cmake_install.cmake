@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo
+# Install script for directory: /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazeboConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazeboConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazeboConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_gazebo/catkin_generated/installspace/uav_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_gazebo/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/meshes")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_gazebo/meshes")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_gazebo/urdf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_gazebo" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_gazebo/urdf")
 endif()
 

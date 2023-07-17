@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs
+# Install script for directory: /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,68 +39,68 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs/msg" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Actuators.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/AttitudeThrust.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RateThrust.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/RollPitchYawrateThrust.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/TorqueThrust.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/Status.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/FilteredSensorData.msg"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/include/mav_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/no996/devel/include/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/roseus/ros/mav_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/roseus/ros/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/common-lisp/ros/mav_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/common-lisp/ros/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/mav_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/gennodejs/ros/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/no996/devel/lib/python3/dist-packages/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/mav_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/no996/devel/lib/python3/dist-packages/mav_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs-msg-extras.cmake"
-    "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/cmake/export_flags.cmake"
+    "/home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgs-msg-extras.cmake"
+    "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/cmake/export_flags.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgsConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgsConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgsConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/catkin_generated/installspace/mav_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mav_msgs" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mav_msgs" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/include/mav_msgs/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mav_msgs" TYPE DIRECTORY FILES "/home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/include/mav_msgs/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

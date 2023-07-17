@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include/rotors_gazebo_plugins/common.h
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include/rotors_gazebo_plugins/common.h
 Eigen/Dense
 -
 gazebo/gazebo.hh
@@ -14,7 +14,7 @@ gazebo/gazebo.hh
 tinyxml.h
 -
 
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include/rotors_gazebo_plugins/external/gazebo_geotagged_images_plugin.h
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/include/rotors_gazebo_plugins/external/gazebo_geotagged_images_plugin.h
 string
 -
 gazebo/common/Plugin.hh
@@ -36,9 +36,9 @@ gazebo/physics/physics.hh
 gazebo/rendering/rendering.hh
 -
 
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/gazebo_geotagged_images_plugin.cpp
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/gazebo_geotagged_images_plugin.cpp
 rotors_gazebo_plugins/external/gazebo_geotagged_images_plugin.h
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/rotors_gazebo_plugins/external/gazebo_geotagged_images_plugin.h
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/rotors_gazebo_plugins/external/gazebo_geotagged_images_plugin.h
 math.h
 -
 string
@@ -50,7 +50,7 @@ boost/filesystem.hpp
 opencv2/opencv.hpp
 -
 rotors_gazebo_plugins/common.h
-/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/rotors_gazebo_plugins/common.h
+/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo_plugins/src/external/rotors_gazebo_plugins/common.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

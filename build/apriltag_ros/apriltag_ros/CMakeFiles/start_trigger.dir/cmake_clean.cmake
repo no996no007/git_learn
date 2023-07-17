@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/start_trigger"
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/start_trigger.pdb"
+  "/home/tao/no996/devel/lib/apriltag_ros/start_trigger"
+  "/home/tao/no996/devel/lib/apriltag_ros/start_trigger.pdb"
   "CMakeFiles/start_trigger.dir/src/start_trigger.cpp.o"
 )
 

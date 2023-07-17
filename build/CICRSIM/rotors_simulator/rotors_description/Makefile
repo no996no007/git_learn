@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tao/git_test/git_learn/build/CMakeFiles /home/tao/git_test/git_learn/build/CICRSIM/rotors_simulator/rotors_description/CMakeFiles/progress.marks
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/git_test/git_learn/build/CMakeFiles 0
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tao/no996/build/CMakeFiles /home/tao/no996/build/CICRSIM/rotors_simulator/rotors_description/CMakeFiles/progress.marks
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/no996/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/clean
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/preinstall
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/preinstall
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/rotors_simulator/rotors_description/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

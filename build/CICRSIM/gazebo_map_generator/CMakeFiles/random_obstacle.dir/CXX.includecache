@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tao/git_test/git_learn/src/CICRSIM/gazebo_map_generator/src/random_obstacle.cpp
+/home/tao/no996/src/CICRSIM/gazebo_map_generator/src/random_obstacle.cpp
 iostream
 -
 math.h

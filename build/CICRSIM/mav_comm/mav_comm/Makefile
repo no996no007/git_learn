@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tao/git_test/git_learn/build/CMakeFiles /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_comm/CMakeFiles/progress.marks
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/git_test/git_learn/build/CMakeFiles 0
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tao/no996/build/CMakeFiles /home/tao/no996/build/CICRSIM/mav_comm/mav_comm/CMakeFiles/progress.marks
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/no996/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/clean
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/preinstall
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/preinstall
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/rule
+	cd /home/tao/no996/build && $(MAKE) -f CMakeFiles/Makefile2 CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ _catkin_empty_exported_target: CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empt
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	cd /home/tao/git_test/git_learn/build && $(MAKE) -f CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/build.make CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/build
+	cd /home/tao/no996/build && $(MAKE) -f CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/build.make CICRSIM/mav_comm/mav_comm/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

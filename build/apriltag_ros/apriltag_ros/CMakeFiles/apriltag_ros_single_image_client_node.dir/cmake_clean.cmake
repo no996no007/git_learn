@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/apriltag_ros_single_image_client_node"
-  "/home/tao/git_test/git_learn/devel/lib/apriltag_ros/apriltag_ros_single_image_client_node.pdb"
+  "/home/tao/no996/devel/lib/apriltag_ros/apriltag_ros_single_image_client_node"
+  "/home/tao/no996/devel/lib/apriltag_ros/apriltag_ros_single_image_client_node.pdb"
   "CMakeFiles/apriltag_ros_single_image_client_node.dir/src/apriltag_ros_single_image_client_node.cpp.o"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for mav_planning_msgs_generate_messages.
 
@@ -63,10 +63,10 @@ CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_message
 .PHONY : CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/build
 
 CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_planning_msgs_generate_messages.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_planning_msgs && $(CMAKE_COMMAND) -P CMakeFiles/mav_planning_msgs_generate_messages.dir/cmake_clean.cmake
 .PHONY : CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/clean
 
 CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_planning_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/mav_comm/mav_planning_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/mav_comm/mav_planning_msgs /home/tao/no996/build/CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/mav_comm/mav_planning_msgs/CMakeFiles/mav_planning_msgs_generate_messages.dir/depend
 

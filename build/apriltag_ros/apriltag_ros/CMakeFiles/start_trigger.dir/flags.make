@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -O3 -funsafe-loop-optimizations -fsee -funroll-loops 
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"apriltag_ros\"
 
-CXX_INCLUDES = -I/home/tao/git_test/git_learn/devel/include -I/home/tao/git_test/git_learn/src/apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/tao/no996/devel/include -I/home/tao/no996/src/apriltag_ros/apriltag_ros/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv4 -I/usr/include/eigen3 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for apriltag_ros_gencpp.
 
@@ -63,10 +63,10 @@ apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/build: apriltag_ros
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/build
 
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/clean:
-	cd /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros && $(CMAKE_COMMAND) -P CMakeFiles/apriltag_ros_gencpp.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/apriltag_ros/apriltag_ros && $(CMAKE_COMMAND) -P CMakeFiles/apriltag_ros_gencpp.dir/cmake_clean.cmake
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/clean
 
 apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/apriltag_ros/apriltag_ros /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros /home/tao/git_test/git_learn/build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/apriltag_ros/apriltag_ros /home/tao/no996/build /home/tao/no996/build/apriltag_ros/apriltag_ros /home/tao/no996/build/apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apriltag_ros/apriltag_ros/CMakeFiles/apriltag_ros_gencpp.dir/depend
 

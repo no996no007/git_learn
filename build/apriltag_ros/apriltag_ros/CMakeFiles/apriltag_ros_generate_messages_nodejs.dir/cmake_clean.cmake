@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetection.js"
-  "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetectionArray.js"
-  "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/apriltag_ros/srv/AnalyzeSingleImage.js"
+  "/home/tao/no996/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetection.js"
+  "/home/tao/no996/devel/share/gennodejs/ros/apriltag_ros/msg/AprilTagDetectionArray.js"
+  "/home/tao/no996/devel/share/gennodejs/ros/apriltag_ros/srv/AnalyzeSingleImage.js"
   "CMakeFiles/apriltag_ros_generate_messages_nodejs"
 )
 

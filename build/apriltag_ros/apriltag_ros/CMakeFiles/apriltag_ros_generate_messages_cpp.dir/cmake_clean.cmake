@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/devel/include/apriltag_ros/AnalyzeSingleImage.h"
-  "/home/tao/git_test/git_learn/devel/include/apriltag_ros/AprilTagDetection.h"
-  "/home/tao/git_test/git_learn/devel/include/apriltag_ros/AprilTagDetectionArray.h"
+  "/home/tao/no996/devel/include/apriltag_ros/AnalyzeSingleImage.h"
+  "/home/tao/no996/devel/include/apriltag_ros/AprilTagDetection.h"
+  "/home/tao/no996/devel/include/apriltag_ros/AprilTagDetectionArray.h"
   "CMakeFiles/apriltag_ros_generate_messages_cpp"
 )
 

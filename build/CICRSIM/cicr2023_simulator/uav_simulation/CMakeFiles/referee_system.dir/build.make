@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Include any dependencies generated for this target.
 include CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/depend.make
@@ -58,17 +58,17 @@ include CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/
 include CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/flags.make
 
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/flags.make
-CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o: /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/referee_system.dir/src/referee_system.cpp.o -c /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o: /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o"
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/referee_system.dir/src/referee_system.cpp.o -c /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp
 
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/referee_system.dir/src/referee_system.cpp.i"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp > CMakeFiles/referee_system.dir/src/referee_system.cpp.i
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp > CMakeFiles/referee_system.dir/src/referee_system.cpp.i
 
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/referee_system.dir/src/referee_system.cpp.s"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp -o CMakeFiles/referee_system.dir/src/referee_system.cpp.s
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp -o CMakeFiles/referee_system.dir/src/referee_system.cpp.s
 
 # Object files for target referee_system
 referee_system_OBJECTS = \
@@ -77,44 +77,44 @@ referee_system_OBJECTS = \
 # External object files for target referee_system
 referee_system_EXTERNAL_OBJECTS =
 
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build.make
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf2_ros.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libactionlib.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libmessage_filters.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libroscpp.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf2.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librostime.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libcpp_common.so
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tao/git_test/git_learn/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system"
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/referee_system.dir/link.txt --verbose=$(VERBOSE)
+/home/tao/no996/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o
+/home/tao/no996/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build.make
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf2_ros.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libactionlib.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libmessage_filters.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libroscpp.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libtf2.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/librostime.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /opt/ros/noetic/lib/libcpp_common.so
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/tao/no996/devel/lib/uav_simulation/referee_system: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/tao/no996/devel/lib/uav_simulation/referee_system: CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/tao/no996/devel/lib/uav_simulation/referee_system"
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/referee_system.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build: /home/tao/git_test/git_learn/devel/lib/uav_simulation/referee_system
+CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build: /home/tao/no996/devel/lib/uav_simulation/referee_system
 
 .PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/build
 
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation && $(CMAKE_COMMAND) -P CMakeFiles/referee_system.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation && $(CMAKE_COMMAND) -P CMakeFiles/referee_system.dir/cmake_clean.cmake
 .PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/clean
 
 CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation /home/tao/no996/build /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation /home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/depend
 

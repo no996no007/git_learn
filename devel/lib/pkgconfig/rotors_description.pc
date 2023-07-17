@@ -1,4 +1,4 @@
-prefix=/home/tao/git_test/git_learn/devel
+prefix=/home/tao/no996/devel
 
 Name: rotors_description
 Description: Description of rotors_description

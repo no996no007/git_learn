@@ -1,8 +1,8 @@
-# Install script for directory: /home/tao/git_test/git_learn/src/CICRSIM/referee_msgs
+# Install script for directory: /home/tao/no996/src/CICRSIM/referee_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tao/git_test/git_learn/install")
+  set(CMAKE_INSTALL_PREFIX "/home/tao/no996/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/msg" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/msg" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/referee_msgs/msg/Apriltag_info.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/include/referee_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/tao/no996/devel/include/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/roseus/ros/referee_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/roseus/ros/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/common-lisp/ros/referee_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/common-lisp/ros/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/share/gennodejs/ros/referee_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/tao/no996/devel/share/gennodejs/ros/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/git_test/git_learn/devel/lib/python3/dist-packages/referee_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/tao/no996/devel/lib/python3/dist-packages/referee_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/cmake" TYPE FILE FILES "/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/cmake" TYPE FILE FILES "/home/tao/no996/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs/cmake" TYPE FILE FILES
-    "/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgsConfig.cmake"
-    "/home/tao/git_test/git_learn/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgsConfig-version.cmake"
+    "/home/tao/no996/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgsConfig.cmake"
+    "/home/tao/no996/build/CICRSIM/referee_msgs/catkin_generated/installspace/referee_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs" TYPE FILE FILES "/home/tao/git_test/git_learn/src/CICRSIM/referee_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/referee_msgs" TYPE FILE FILES "/home/tao/no996/src/CICRSIM/referee_msgs/package.xml")
 endif()
 

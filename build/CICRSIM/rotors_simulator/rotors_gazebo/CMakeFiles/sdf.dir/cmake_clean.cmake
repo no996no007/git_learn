@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/tao/git_test/git_learn/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf"
+  "/home/tao/no996/src/CICRSIM/rotors_simulator/rotors_gazebo/models/iris/iris.sdf"
   "CMakeFiles/sdf"
 )
 

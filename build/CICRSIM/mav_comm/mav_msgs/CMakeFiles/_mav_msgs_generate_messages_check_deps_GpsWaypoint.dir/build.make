@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for _mav_msgs_generate_messages_check_deps_GpsWaypoint.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
 include CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/progress.make
 
 CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mav_msgs /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg std_msgs/Header
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py mav_msgs /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs/msg/GpsWaypoint.msg std_msgs/Header
 
 _mav_msgs_generate_messages_check_deps_GpsWaypoint: CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint
 _mav_msgs_generate_messages_check_deps_GpsWaypoint: CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/build.make
@@ -67,10 +67,10 @@ CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsW
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/build
 
 CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/cmake_clean.cmake
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/clean
 
 CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/mav_comm/mav_msgs /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs /home/tao/git_test/git_learn/build/CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/mav_comm/mav_msgs /home/tao/no996/build /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs /home/tao/no996/build/CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/mav_comm/mav_msgs/CMakeFiles/_mav_msgs_generate_messages_check_deps_GpsWaypoint.dir/depend
 

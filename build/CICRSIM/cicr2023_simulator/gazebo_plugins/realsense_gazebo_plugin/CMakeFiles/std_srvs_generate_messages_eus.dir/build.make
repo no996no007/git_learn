@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tao/git_test/git_learn/src
+CMAKE_SOURCE_DIR = /home/tao/no996/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/git_test/git_learn/build
+CMAKE_BINARY_DIR = /home/tao/no996/build
 
 # Utility rule file for std_srvs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std
 .PHONY : CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 
 CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/clean:
-	cd /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/tao/no996/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/clean
 
 CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/depend:
-	cd /home/tao/git_test/git_learn/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/git_test/git_learn/src /home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin /home/tao/git_test/git_learn/build /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin /home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tao/no996/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tao/no996/src /home/tao/no996/src/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin /home/tao/no996/build /home/tao/no996/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin /home/tao/no996/build/CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CICRSIM/cicr2023_simulator/gazebo_plugins/realsense_gazebo_plugin/CMakeFiles/std_srvs_generate_messages_eus.dir/depend
 

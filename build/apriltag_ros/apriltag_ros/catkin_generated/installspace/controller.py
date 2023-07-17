@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import rospy
+import rosnode
 import math
 import numpy as np
 import tf.transformations as tft
@@ -28,8 +29,8 @@ checkpoints=[
     [-9.5,-3.6,1.95],
     [-9.5,-1.6,1.95],
     [-6.0,-1.6,1.95],
-    [-6.0,0.5,1.95],
-    [-8.5,1.6,1.95],
+    [-6.0,0.5,1.95], #要改
+    [-8.5,1.6,1.95], #
     [-7.5,5.0,1.95],
     [-2.5,5.3,1.95],
     [1.38,5.3,1.95],
@@ -80,7 +81,7 @@ def set_world_linear_by_dst_point(xyzo):
     # pp=xyzp[2]
     drone_state = get_model_state('ardrone','world')
     x=0.2
-    Kp=1.5/0.2 # 即在x米以内才开始减速，其他时候全速(为3)前进！
+    Kp=3/0.2 # 即在x米以内才开始减速，其他时候全速(为3)前进！
     x_speed=(xx-drone_state.pose.position.x)*Kp
     y_speed=(yy-drone_state.pose.position.y)*Kp
     z_speed=(zz-drone_state.pose.position.z)*Kp
@@ -164,10 +165,11 @@ if __name__ == '__main__':
         # 这个全局变量要声明一下！
         rospy.init_node('controller')
         rospy.logwarn("controller loaded!!!!\n")
+        rosnode.kill_nodes(['keyboard_control'])
         rate = rospy.Rate(10000)
 
         while not rospy.is_shutdown():
-            rospy.sleep(0.01)
+            # rospy.sleep(0.01)
             # rospy.loginfo("controller running")
             drone_state = get_model_state('ardrone','world')
             # print(drone_state.pose.orientation.z,"\n")

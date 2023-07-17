@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp" "/home/tao/git_test/git_learn/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o"
+  "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/src/referee_system.cpp" "/home/tao/no996/build/CICRSIM/cicr2023_simulator/uav_simulation/CMakeFiles/referee_system.dir/src/referee_system.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,8 +22,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-7.1"
   "/usr/include/freetype2"
-  "/home/tao/git_test/git_learn/src/CICRSIM/cicr2023_simulator/uav_simulation/include"
-  "/home/tao/git_test/git_learn/devel/include"
+  "/home/tao/no996/src/CICRSIM/cicr2023_simulator/uav_simulation/include"
+  "/home/tao/no996/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
