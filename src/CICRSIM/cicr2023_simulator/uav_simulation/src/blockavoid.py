@@ -5,17 +5,16 @@ from gazebo_msgs.srv import GetModelState
 from nav_msgs.msg import Odometry
 import numpy as np
 import math
-import tf.transformations as tft
 import rospy
 from sensor_msgs.msg import PointCloud2
 from sensor_msgs.msg import PointField
 from sensor_msgs import point_cloud2
-import numpy as np
+
 
 rospy.init_node('control&Point_cloud')
 model_odom_pub = rospy.Publisher('/position_control',Odometry,queue_size=10)
 get_model_state = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
-body_pose_msg = ModelState() #uav body pose
+body_pose_msg = ModelState() 
 last_body_pose_msg = ModelState() 
 odom = Odometry()
 
@@ -23,7 +22,7 @@ odom = Odometry()
 point_cloud_get = rospy.ServiceProxy('/velodyne_points',PointCloud2)
 
 #这个是点云滤波范围 
-float distance = 0.3
+float distance = 0.64
 
 #方向归一化函数 (x,y)返回(1，y/x) 若abs(x)>abs(y)
 def speed_tran(speedx,speedy):
@@ -54,16 +53,12 @@ def centre_link()
     return Link
 #速度设置的函数
 def speedset(double xx,double yy):
-
-#朝向目标点速度方向
   drone_state = get_model_state('ardrone','world')
-  Dir=speed_tran(xx-drone_state.pose.position.x,yy-drone_state.pose.position.y)
+  Dir=speed_tran(xx-drone_state.pose.position.x,yy-drone_state.pose.position.y)#朝向目标点速度方向
 
-  #计算连接方向
-  link=centre_link()
+  link=centre_link()#计算连接方向
   
-  #远离障碍物速度方向
-  backdir=(-link[0],-link[1])
+  backdir=(-link[0],-link[1])#远离障碍物速度方向
 
   #判断绕行障碍物速度方向
   if (Dir[0]*link[1]-Dir[1]*link[0])>0:
