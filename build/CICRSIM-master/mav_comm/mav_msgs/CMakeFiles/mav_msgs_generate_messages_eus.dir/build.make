@@ -73,8 +73,8 @@ CICRSIM-master/mav_comm/mav_msgs/CMakeFiles/mav_msgs_generate_messages_eus: /hom
 /home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /home/tao/no996/src/CICRSIM-master/mav_comm/mav_msgs/msg/AttitudeThrust.msg
 /home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/tao/no996/devel/share/roseus/ros/mav_msgs/msg/AttitudeThrust.l: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tao/no996/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from mav_msgs/AttitudeThrust.msg"
 	cd /home/tao/no996/build/CICRSIM-master/mav_comm/mav_msgs && ../../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/tao/no996/src/CICRSIM-master/mav_comm/mav_msgs/msg/AttitudeThrust.msg -Imav_msgs:/home/tao/no996/src/CICRSIM-master/mav_comm/mav_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p mav_msgs -o /home/tao/no996/devel/share/roseus/ros/mav_msgs/msg
 

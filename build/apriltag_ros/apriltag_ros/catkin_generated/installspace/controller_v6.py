@@ -4,13 +4,13 @@ import rosnode
 import math
 import numpy as np
 import tf.transformations as tft
+from std_msgs.msg import Bool
 from nav_msgs.msg import Odometry
 from gazebo_msgs.msg import ModelState
 from gazebo_msgs.srv import GetModelState
 
-
 model_odom_pub = rospy.Publisher('/position_control',Odometry,queue_size=10)
-trigger_pub = rospy.Publisher('/start_flag',bool,queue_size=10)
+trigger_pub = rospy.Publisher('/start_flag',Bool,queue_size=10)
 get_model_state = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
 body_pose_msg = ModelState() #uav body pose
 last_body_pose_msg = ModelState() 
@@ -114,6 +114,8 @@ def set_world_linear_by_dst_point(xyzo):
     v_last_z = drone_state.twist.linear.z
     v_last = math.sqrt(v_last_x**2 + v_last_y**2 + v_last_z**2) #计算实际速度
 
+    print(v_last,"\n")
+
     xx=xyzo[0] #这是目标坐标（世界）
     yy=xyzo[1]
     zz=xyzo[2]
@@ -127,15 +129,22 @@ def set_world_linear_by_dst_point(xyzo):
     if len(z_error)>10:
         z_error.pop() #维持z_error列表长度为10
     odom.twist.twist.linear.z = 3*rz+0.03*np.sum(z_error)
+    
+    # distance = math.sqrt(rx**2 + ry**2 + rz**2)
 
-    distance = math.sqrt(rx**2 + ry**2 + rz**2)
-    # 如果当前速度朝向目标点，且全速减速来不及刹停时，立即全速减速！
-    if (distance<0.5*(v_last**2)) and (rx*v_last_x>0) and (ry*v_last_y>0):
-        odom.twist.twist.linear.x = -999*rx #设置一个极大的反向速度，command会自动取最大反向加速度
-        odom.twist.twist.linear.y = -999*ry
-    else:
-        odom.twist.twist.linear.x = 999*rx #设置一个极大的正向速度，command会自动取最正加速度
-        odom.twist.twist.linear.y = 999*ry
+    # if(distance<=2.5):
+        
+    # odom.twist.twist.linear.z = 999*rz
+    # odom.twist.twist.linear.x = 999*rx #设置一个极大的反向速度，command会自动取最大反向加速度
+    # odom.twist.twist.linear.y = 999*ry
+
+    # # 如果当前速度朝向目标点，且全速减速来不及刹停时，立即全速减速！
+    # if (distance<0.25*(v_last**2)) and (rx*v_last_x>=-0.05) and (ry*v_last_y>=-0.05) and (rz*v_last_z>=-0.05):
+    #     odom.twist.twist.linear.x = -999*rx #设置一个极大的反向速度，command会自动取最大反向加速度
+    #     odom.twist.twist.linear.y = -999*ry
+    #     odom.twist.twist.linear.z = -999*rz
+
+
 
     # # yaw=xyzo[2]
     # x=0.5
@@ -171,11 +180,16 @@ def set_world_linear_by_dst_point(xyzo):
     odom.twist.twist.angular.y = drone_state.twist.angular.y
     if(abs(uav_yaw)<3.13):
         odom.twist.twist.angular.z = 2*abs(3.141592-abs(uav_yaw))*uav_yaw/abs(uav_yaw) # 暂时使它一直朝向yaw=3.14的位置
-
-    if max(np.abs([rx,ry,rz]))<0.05: # 最大距离差小于0.05判断为到达目的
-        return True
+    if(current_point==0):
+        if max(np.abs([rx,ry,rz]))<0.02: # 第一个点最大距离差小于0.02判断为到达目的
+            return True
+        else:
+            return False
     else:
-        return False
+        if max(np.abs([rx,ry]))<0.05: # 最大距离差小于0.05判断为到达目的
+            return True
+        else:
+            return False
 
 # 维护无人机状态时，只需要维护修改的速度状态，位置状态不需要被修改，读了什么就设置为什么。
 def keep_model_position():

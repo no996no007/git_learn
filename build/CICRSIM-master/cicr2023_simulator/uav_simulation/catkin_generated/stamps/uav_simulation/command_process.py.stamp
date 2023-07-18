@@ -132,7 +132,7 @@ def odomMSGCallBack(msg):
     pub_pose_msg.twist.linear.y = v_now_y
     pub_pose_msg.twist.linear.z = v_now_z
 
-
+    print(v_now_z)
 
     pub_pose_msg.twist.angular.x = w_now_x
     pub_pose_msg.twist.angular.y = w_now_y
