@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/env python
 import rospy
 import rosnode
 import math
@@ -10,6 +10,7 @@ from gazebo_msgs.srv import GetModelState
 
 
 model_odom_pub = rospy.Publisher('/position_control',Odometry,queue_size=10)
+trigger_pub = rospy.Publisher('/start_flag',bool,queue_size=10)
 get_model_state = rospy.ServiceProxy('/gazebo/get_model_state', GetModelState)
 body_pose_msg = ModelState() #uav body pose
 last_body_pose_msg = ModelState() 
@@ -18,6 +19,7 @@ odom = Odometry()
 
 current_point=0
 checkpoints=[
+    [8.5,4.0,1.95],
     [9.8,3.6,1.95],
     [9.3,1.0,1.95],
     [8.8,-3.0,1.95],
@@ -72,33 +74,89 @@ def set_body_ylinear_speed(y):
     body_pose_msg.twist.linear.y = y
     last_body_pose_msg.twist.linear.y = body_pose_msg.twist.linear.y
 
+v_last_x = 0.0
+v_last_y = 0.0
+v_last_z = 0.0
+w_last_x = 0.0
+w_last_y = 0.0
+w_last_z = 0.0
+acc_x = 0.0
+acc_y = 0.0
+acc_z = 0.0
+acc_w_x=0.0
+acc_w_y=0.0
+acc_w_z=0.0
+t_last=0
+z_error=[] # 对高度使用pi控制，这个列表用于记录之前的10帧高度差
+
 # 给予一个指定点与偏航角，用P控制直线运动到世界坐标系的某点
 def set_world_linear_by_dst_point(xyzo):
     global odom,drone_state,body_pose_msg,last_body_pose_msg
-    xx=xyzo[0]
+    global t_last
+    global v_last_x
+    global v_last_y
+    global v_last_z
+    global w_last_x
+    global w_last_y
+    global w_last_z
+    global acc_x
+    global acc_y
+    global acc_z
+    global acc_w_x
+    global acc_w_y
+    global acc_w_z
+    t_now = rospy.Time.now()
+    dt = (t_now - t_last).to_sec()
+    drone_state = get_model_state('ardrone','world')
+
+    v_last_x = drone_state.twist.linear.x #获取真实当前速度
+    v_last_y = drone_state.twist.linear.y
+    v_last_z = drone_state.twist.linear.z
+    v_last = math.sqrt(v_last_x**2 + v_last_y**2 + v_last_z**2) #计算实际速度
+
+    xx=xyzo[0] #这是目标坐标（世界）
     yy=xyzo[1]
     zz=xyzo[2]
-    # pp=xyzp[2]
-    drone_state = get_model_state('ardrone','world')
-    x=0.5
-    maxv=1
-    Kp=maxv/x # 即在x米以内才开始减速，其他时候全速(为3)前进！
-    x_speed=(xx-drone_state.pose.position.x)*Kp
-    y_speed=(yy-drone_state.pose.position.y)*Kp
-    z_speed=(zz-drone_state.pose.position.z)*Kp
-    max_speed=max(np.abs([x_speed,y_speed,z_speed]))
-    if(abs(max_speed)>maxv):
-        x_speed=maxv*x_speed/abs(max_speed)
-        y_speed=maxv*y_speed/abs(max_speed)
-        z_speed=maxv*z_speed/abs(max_speed)
-    else:
-        x_speed=x_speed*abs(x_speed)/abs(max_speed)
-        y_speed=y_speed*abs(y_speed)/abs(max_speed)
-        z_speed=z_speed*abs(z_speed)/abs(max_speed)
 
-    odom.twist.twist.linear.x = x_speed
-    odom.twist.twist.linear.y = y_speed
-    odom.twist.twist.linear.z = z_speed
+    rx=(xx-drone_state.pose.position.x) #这是当前坐标指向目标坐标的向量（世界）
+    ry=(yy-drone_state.pose.position.y)
+    rz=(zz-drone_state.pose.position.z)
+
+    # 单独对z实施pi控制
+    z_error.insert(0,rz*dt)
+    if len(z_error)>10:
+        z_error.pop() #维持z_error列表长度为10
+    odom.twist.twist.linear.z = 3*rz+0.03*np.sum(z_error)
+
+    distance = math.sqrt(rx**2 + ry**2 + rz**2)
+    # 如果当前速度朝向目标点，且全速减速来不及刹停时，立即全速减速！
+    if (distance<0.5*(v_last**2)) and (rx*v_last_x>0) and (ry*v_last_y>0):
+        odom.twist.twist.linear.x = -999*rx #设置一个极大的反向速度，command会自动取最大反向加速度
+        odom.twist.twist.linear.y = -999*ry
+    else:
+        odom.twist.twist.linear.x = 999*rx #设置一个极大的正向速度，command会自动取最正加速度
+        odom.twist.twist.linear.y = 999*ry
+
+    # # yaw=xyzo[2]
+    # x=0.5
+    # maxv=1
+    # Kp=maxv/x # 即在x米以内才开始减速，其他时候全速(为3)前进！
+    # x_speed=(xx-drone_state.pose.position.x)*Kp
+    # y_speed=(yy-drone_state.pose.position.y)*Kp
+    # z_speed=(zz-drone_state.pose.position.z)*Kp
+    # max_speed=max(np.abs([x_speed,y_speed,z_speed]))
+    # if(abs(max_speed)>maxv):
+    #     x_speed=maxv*x_speed/abs(max_speed)
+    #     y_speed=maxv*y_speed/abs(max_speed)
+    #     z_speed=maxv*z_speed/abs(max_speed)
+    # else:
+    #     x_speed=x_speed*abs(x_speed)/abs(max_speed)
+    #     y_speed=y_speed*abs(y_speed)/abs(max_speed)
+    #     z_speed=z_speed*abs(z_speed)/abs(max_speed)
+
+    # odom.twist.twist.linear.x = x_speed
+    # odom.twist.twist.linear.y = y_speed
+    # odom.twist.twist.linear.z = z_speed
 
     quaternion_uav = (drone_state.pose.orientation.w, drone_state.pose.orientation.x, drone_state.pose.orientation.y, drone_state.pose.orientation.z)
     euler_angles = tft.euler_from_quaternion(quaternion_uav, 'sxyz') # yaw
@@ -114,7 +172,7 @@ def set_world_linear_by_dst_point(xyzo):
     if(abs(uav_yaw)<3.13):
         odom.twist.twist.angular.z = 2*abs(3.141592-abs(uav_yaw))*uav_yaw/abs(uav_yaw) # 暂时使它一直朝向yaw=3.14的位置
 
-    if (max(np.abs([x_speed,y_speed,z_speed])/Kp)<0.05): # 最大距离差小于0.05判断为到达目的
+    if max(np.abs([rx,ry,rz]))<0.05: # 最大距离差小于0.05判断为到达目的
         return True
     else:
         return False
@@ -167,6 +225,7 @@ if __name__ == '__main__':
         rospy.init_node('controller')
         rospy.logwarn("controller loaded!!!!\n")
         rosnode.kill_nodes(['keyboard_control'])
+        t_last = rospy.Time.now()
         rate = rospy.Rate(10000)
 
         while not rospy.is_shutdown():
@@ -185,10 +244,13 @@ if __name__ == '__main__':
             if(is_checked): # 如果到了下次就去下一个点
                 current_point+=1
                 current_point%=len(checkpoints)
+                if(current_point==0): # 如果下一个点是其实悬停点那么跳过
+                    current_point+=1
                 print(current_point)
             # body_pose_msg.twist.linear.z = 3
             # last_body_pose_msg.twist.linear.z = body_pose_msg.twist.linear.z
-
+            if(current_point):
+                trigger_pub.publish(True)
             #------------------------------------------------------
             # 根据世界坐标系的速度发布修改
             keep_model_position()

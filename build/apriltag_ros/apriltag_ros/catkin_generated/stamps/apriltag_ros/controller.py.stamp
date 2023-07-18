@@ -80,16 +80,17 @@ def set_world_linear_by_dst_point(xyzo):
     zz=xyzo[2]
     # pp=xyzp[2]
     drone_state = get_model_state('ardrone','world')
-    x=0.2
-    Kp=3/0.2 # 即在x米以内才开始减速，其他时候全速(为3)前进！
+    x=0.5
+    maxv=1
+    Kp=maxv/x # 即在x米以内才开始减速，其他时候全速(为3)前进！
     x_speed=(xx-drone_state.pose.position.x)*Kp
     y_speed=(yy-drone_state.pose.position.y)*Kp
     z_speed=(zz-drone_state.pose.position.z)*Kp
     max_speed=max(np.abs([x_speed,y_speed,z_speed]))
-    if(abs(max_speed)>1.5):
-        x_speed=1.5*x_speed/abs(max_speed)
-        y_speed=1.5*y_speed/abs(max_speed)
-        z_speed=1.5*z_speed/abs(max_speed)
+    if(abs(max_speed)>maxv):
+        x_speed=maxv*x_speed/abs(max_speed)
+        y_speed=maxv*y_speed/abs(max_speed)
+        z_speed=maxv*z_speed/abs(max_speed)
     else:
         x_speed=x_speed*abs(x_speed)/abs(max_speed)
         y_speed=y_speed*abs(y_speed)/abs(max_speed)
@@ -113,7 +114,7 @@ def set_world_linear_by_dst_point(xyzo):
     if(abs(uav_yaw)<3.13):
         odom.twist.twist.angular.z = 2*abs(3.141592-abs(uav_yaw))*uav_yaw/abs(uav_yaw) # 暂时使它一直朝向yaw=3.14的位置
 
-    if (max(np.abs([x_speed,y_speed,z_speed])/Kp)<0.03): # 最大距离差小于0.05判断为到达目的
+    if (max(np.abs([x_speed,y_speed,z_speed])/Kp)<0.05): # 最大距离差小于0.05判断为到达目的
         return True
     else:
         return False

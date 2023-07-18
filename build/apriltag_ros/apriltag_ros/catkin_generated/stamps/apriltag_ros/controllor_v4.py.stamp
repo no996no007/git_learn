@@ -22,6 +22,14 @@ odom = Odometry()
 #这个是点云滤波范围 
 distance = 0.64
 
+def sgn(x):
+    if x > 0:
+        return 1
+    elif x == 0:
+        return 0
+    else:
+        return -1
+
 #中心坐标与当前坐标连线方向计算函数
 def centre_link():
   i=0
@@ -31,7 +39,7 @@ def centre_link():
   data=point_cloud_get()
   points = point_cloud2.read_points(data, field_names=("x", "y", "z"), skip_nans=True)
   for p in points:
-    if pow((p[0]-drone_state.pose.position.x),2)+pow((p[1]-drone_state.pose.position.y),2)<distance:
+    if pow((p[0]-drone_state.pose.position.x),2)+pow((p[1]-drone_state.pose.position.y),2)<pow(distance,2):
       x_sum=x_sum+p[0]
       y_sum=y_sum+p[1]
       i=i+1
@@ -40,8 +48,8 @@ def centre_link():
     return(0,0)
   else:
     centre_point=(x_sum/i,y_sum/i)
-    Link=(centre_point[0]-drone_state.pose.position.x,centre_point[1]-drone_state.pose.position.y)
-    
+    Link=(sgn(centre_point[0]-drone_state.pose.position.x)*1.5*(1-abs(centre_point[0]-drone_state.pose.position.x)/distance),
+          sgn(centre_point[1]-drone_state.pose.position.y)*1.5*(1-abs(centre_point[1]-drone_state.pose.position.y)/distance))
     return Link
 
 #速度设置的函数
@@ -128,7 +136,7 @@ def set_world_linear_by_dst_point(xyzo):
     # pp=xyzp[2]
     drone_state = get_model_state('ardrone','world')
     x=0.2
-    Kp=1.5/0.2 # 即在x米以内才开始减速，其他时候全速(为3)前进！
+    Kp=1.5/x # 即在x米以内才开始减速，其他时候全速(为3)前进！
     xd=xx-drone_state.pose.position.x
     yd=yy-drone_state.pose.position.y
     zd=zz-drone_state.pose.position.z
@@ -139,7 +147,7 @@ def set_world_linear_by_dst_point(xyzo):
     backdir=(-link[0],-link[1])#远离障碍物速度方向
 
     #判断绕行障碍物速度方向
-    if (speedXYZ[0]*link[1]-speedXYZ[1]*link[0])>0:
+    if (speedxyz[0]*link[1]-speedxyz[1]*link[0])>0:
         direct=(link[1],-link[0])
     else:
         direct=(-link[1],link[0])
@@ -219,6 +227,7 @@ if __name__ == '__main__':
         rospy.init_node('controller')
         rospy.logwarn("controller loaded!!!!\n")
         rosnode.kill_nodes(['keyboard_control'])
+        # rosnode.
         rate = rospy.Rate(10000)
 
         while not rospy.is_shutdown():
@@ -246,7 +255,7 @@ if __name__ == '__main__':
             keep_model_position()
             # print(odom.pose.pose.position.x)
             model_odom_pub.publish(odom)
-            # rate.sleep()
+            rate.sleep()
 
     except rospy.ROSInterruptException:
         pass

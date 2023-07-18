@@ -2,4 +2,4 @@
 source_root_dir = '/home/tao/no996/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/tao/no996/devel;/home/tao/git_test/git_learn/devel;/home/tao/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tao/no996/devel;/home/tao/git_test/git_learn/devel;/home/tao/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/tao/git_test/git_learn/devel;/home/tao/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tao/git_test/git_learn/devel;/home/tao/catkin_ws/devel;/opt/ros/noetic' != '' else []

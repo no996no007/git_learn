@@ -126,6 +126,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/tao/no996/src/apriltag_ros/apriltag_ros/CMakeLists.txt"
   "/home/tao/no996/src/apriltag_ros/apriltag_ros/package.xml"
   "/home/tao/no996/src/apriltag_ros/apriltag_ros/src/controller.py"
+  "/home/tao/no996/src/apriltag_ros/apriltag_ros/src/controller_v6.py"
   "/home/tao/no996/src/apriltag_ros/apriltag_ros/src/controllor_v4.py"
   "/opt/ros/noetic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig-version.cmake"
